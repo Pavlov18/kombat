@@ -3,14 +3,14 @@ body {
     height: 100%
 }
 body {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 22px;
-    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-family: 'PT Sans',Verdana,Arial,sans-serif;
     color: #333;
     background: #fff
 }
 a {
-    color: #7dc33a;
+    color: #193cfe;
     text-decoration: none;
     cursor: pointer
 }
@@ -140,7 +140,7 @@ h4 {
 .entry h3 {
     padding: 0;
     margin-bottom: 18px;
-    color: #0C5D18;
+    color: #3251b9;
     border-bottom: #ecebeb 1px solid;
     line-height: 30px;
     box-shadow: 0 1px 0 0 #fff, -2px 14px 12px -13px #b4b3b3
@@ -178,7 +178,7 @@ h4 {
 .entry ul li::before {
     position: absolute;
     content: "";
-    background: url(assets/templates/uss/img/uss-icons.png) no-repeat;
+    background: url(assets/templates/kombat/img/icons.png) no-repeat;
     width: 9px;
     height: 9px;
     background-position: -85px -56px;
@@ -222,139 +222,136 @@ h4 {
     margin: 0 auto
 }
 #header {
-    background: #048417;
-    background: linear-gradient(to top, #18ba18, #0a930a);
+ 
     position: relative;
-    margin-top: 7px;
-    box-shadow: inset 0 5px 12px -8px #000
 }
-.header-home {
-    height: 394px;
-    box-shadow: inset 0 5px 12px -8px #000,0 0px 12px 0px #b4b3b3 !important
-}
+
 #logo {
     float: left;
+        margin-right: 14px;
     margin-top: 6px
 }
 #logo a {
     display: block;
-    width: 290px;
-    height: 85px;
-    background: url(assets/templates/uss/img/logo.png) no-repeat 0 0
+    width: 230px;
+    height: 74px;
+    background: url(assets/templates/kombat/img/logo.png) no-repeat 0 0
 }
 #logo a:hover {
     opacity: 0.9
 }
-.years {
-    font-size: 0;
-    position: relative;
-    background: url(assets/templates/uss/img/uss-icons.png) no-repeat;
-    background-position: -136px -2px;
-    width: 89px;
-    height: 76px;
-    margin-left: 10px;
-    top: 14px;
-    float: left
+ 
+.button-search-shell {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+width: 77%;
+float:left;
+    margin-top:28px;
+    text-align:     center;
+
 }
-.slogan {
-    width: 22%;
-    margin-top: 16px;
-    margin-left: 5px;
-    float: left;
-    font-size: 14px;
-    color: #fff;
-    font-weight: bold;
-    text-align: center
-}
-.telephone-shell {
-    width: 43%;
-    float: right;
-    margin: 12px 0;
-    position: relative;
-    text-align: right
-}
-.telephone {
-    float: left;
-    width: 272px;
-    display: block;
-    line-height: 24px;
-    text-shadow: 2px 2px 2px #333;
-    vertical-align: middle;
-    font-size: 28px;
-    font-weight: bold
-}
-.telephone .tel1 {
-    display: block;
-    position: relative;
-    margin-bottom: 10px;
-    color: #fff;
-    text-decoration: none;
-    cursor: default
-}
-.telephone .tel1::before {
-    content: "";
-    position: absolute;
-    top: 2px;
-    left: 0;
-    width: 25px;
-    height: 32px;
-    background: url(assets/templates/uss/img/uss-icons.png) no-repeat;
-    background-position: -55px -76px
-}
-.telephone a.content-button {
-    box-shadow: 0 0 2px 1px #fff
-}
-.telephone2 {
-    display: block;
-    position: relative;
-    width: 198px;
-    float: right;
-    line-height: 24px;
-    color: #F9E74B;
-    text-shadow: 2px 2px 2px #333;
-    font-size: 20px;
-    font-weight: bold
-}
-.telephone2 a {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    cursor: default
-}
-.telephone2::before {
-    content: "";
-    position: absolute;
-    top: 2px;
-    left: 0;
-    width: 23px;
-    height: 23px;
-    background: url(assets/templates/uss/img/uss-icons.png) no-repeat;
-    background-position: -102px -4px
-}
-a.header-email {
-    position: relative;
+ 
+
+.search {
     display: inline-block;
-    width: 100%;
-    line-height: 27px;
-    color: #F9E74B;
-    font-size: 22px;
-    text-shadow: 2px 2px 2px #333;
-    font-weight: bold
+
 }
-a.header-email:hover {
+ 
+.search form {
+     border: 2px solid #193cfe;
+             background: #e0e6fd;
+    border-radius: 6px;
+    margin:0;
+}
+
+.search input {
+    display:    inline-block;
+    float: left;
+    border: none;
+         background: none;
+  position: relative;
+  width: 170px;
+  height: 30px;
+  padding-left: 15px;
+  transition: .3s linear;
+}
+
+.search input:focus {
+  width: 200px;
+}
+
+.search button {
+    display:inline-block;
+    float: left;
+    position: relative;
+    border: none;
+    width: 30px;
+    height: 30px;
+    background: none;
     cursor: pointer;
-    text-decoration: underline
+    padding:0;
+ }
+
+
+.search button::after {
+   position: absolute;
+   content: "";
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    width: 24px;
+    height: 24px;
+    background: url(assets/templates/kombat/img/icons.png) no-repeat;
+    background-position: -24px 0px;
 }
-a.header-email:before {
+ 
+.button-search-shell .first-tel {
+    display: block;
+    position: relative;
+    margin-left: 28px;
+    color: #000;
+    text-decoration: none;
+    text-align: right;
+    cursor: default
+}
+
+
+.button-search-shell .first-tel::before {
     content: "";
     position: absolute;
-    top: 6px;
-    left: 0;
-    width: 23px;
-    height: 17px;
-    background: url(assets/templates/uss/img/uss-icons.png) no-repeat;
-    background-position: -54px -108px
+    left: -28px;
+    width: 24px;
+    height: 24px;
+    background: url(assets/templates/kombat/img/icons.png) no-repeat;
+    background-position: 0px -24px;
 }
+
+.button-search-shell  .header-email {
+    position: relative;
+    margin-left: 28px;
+    display: inline-block;
+    text-align: right;
+        text-decoration: none;
+            color: #000;
+}
+
+.button-search-shell  .header-email:hover {
+    cursor: pointer;
+
+}
+
+.button-search-shell  .header-email:before {
+    content: "";
+    position: absolute;
+    left: -28px;
+    width: 24px;
+    height: 24px;
+    background: url(assets/templates/kombat/img/icons.png) no-repeat;
+    background-position: 0px 0px;
+}
+
 .breadcrumbs {
     width: 100%;
     background: #0a930a;
@@ -381,8 +378,12 @@ a.header-email:before {
     color: #ffe500
 }
 .sticky-element {
-    background: #fff;
-    box-shadow: 0 0px 10px -2px #000
+    background:#416bfb;
+    background: -moz-linear-gradient(90deg, #416bfb, #7391f9);
+    background: -webkit-linear-gradient(90deg, #416bfb, #7391f9);
+    background: -o-linear-gradient(90deg, #416bfb, #7391f9);
+    background: -ms-linear-gradient(90deg, #416bfb, #7391f9);
+    background: linear-gradient(180deg, #416bfb, #7391f9)
 }
 .sticky-anchor {
     display: none
@@ -444,7 +445,7 @@ a.header-email:before {
 .sidebar-menu ul li ul li::before {
     top: 6px;
     left: 10px;
-    background: url(assets/templates/uss/img/uss-icons.png) no-repeat;
+    background: url(assets/templates/kombat/img/icons.png) no-repeat;
     width: 10px;
     height: 13px;
     background-position: -31px -56px
@@ -524,12 +525,9 @@ a.header-email:before {
     margin-bottom: 10px
 }
 #main.home2 .shell {
-    padding-top: 145px;
     text-align: justify
 }
-#main.home2 .entry {
-    font-size: 14px
-}
+ 
 #main.home2 .entry img {
     height: auto;
     text-align: center;
@@ -538,7 +536,7 @@ a.header-email:before {
     margin-left: 7px
 }
 #main.home2 .entry h2 {
-    margin-top: 30px
+    margin-top: 10px
 }
 #content {
     width: 71%;
@@ -598,37 +596,38 @@ a.header-email:before {
 .home-box-item {
     float: left;
     display: block;
-    background: #d7ffdb;
-    color: #1a8f1d;
+    background: #e0e6fd;
+    border-radius: 6px;
+    color: #193cfe;
     width: 31%;
     min-height: 236px;
     margin: 0 7px 14px 7px;
     text-align: center;
-    border: 1px solid #a3eda5;
+    border: 1px solid #8aa2f5;
     word-wrap: break-word
 }
 .home-box-item:hover {
     text-decoration: none;
-    box-shadow: 0 0 1px 1px #7dc33a
+    box-shadow: 0 0 1px 1px #003aff
 }
 .home-box-item:active {
-    box-shadow: 0 0 2px 1px #0c980f
+    box-shadow: 0 0 2px 1px #003afd
 }
 .home-box-item h4 {
     min-height: 48px;
     line-height: 16px;
     font-size: 14px;
-    color: #05911a;
+    color: #003aff;
     font-weight: bold;
     text-transform: none;
     padding: 5px;
     text-align: center
 }
 .home-box-item:hover h4 {
-    color: #7dc33a
+color: #2758fd;
 }
 .home-box-item:active h4 {
-    color: #0c980f
+    color: #7794f7
 }
 .home-box-item img {
     width: 95%;
@@ -654,7 +653,7 @@ ul.customBullet li {
     padding-left: 26px
 }
 ul.customBullet li::before {
-    background: url(assets/templates/uss/img/uss-icons.png) no-repeat;
+    background: url(assets/templates/kombat/img/icons.png) no-repeat;
     width: 19px;
     height: 16px;
     background-position: -4px -56px
@@ -771,7 +770,7 @@ ul.customBullet li a:hover {
     width: 14px;
     height: 14px;
     top: 5px;
-    background: url(assets/templates/uss/img/uss-icons.png) no-repeat;
+    background: url(assets/templates/kombat/img/icons.png) no-repeat;
     background-position: -85px -73px;
     margin-left: -25px
 }
@@ -832,12 +831,12 @@ ul.customBullet li a:hover {
     text-indent: -4000px
 }
 .slider2 .slider-holder .slider-bar .carousel-down {
-    background: url(assets/templates/uss/img/uss-icons.png) no-repeat 0 0;
+    background: url(assets/templates/kombat/img/icons.png) no-repeat 0 0;
     right: 63px;
     background-position: -53px -4px
 }
 .slider2 .slider-holder .slider-bar .carousel-up {
-    background: url(assets/templates/uss/img/uss-icons.png) no-repeat 0 0;
+    background: url(assets/templates/kombat/img/icons.png) no-repeat 0 0;
     right: 18px;
     background-position: -4px -4px
 }
@@ -848,26 +847,29 @@ ul.customBullet li a:hover {
     padding: 5px;
     margin-bottom: 15px
 }
+
+
 a.content-button {
     display: inline-block;
     position: relative;
-    padding: 6px 40px;
-    font-weight: bold;
+    padding: 6px 14px;
+ 
     color: #fff;
-    background: #389809;
-    border-radius: 24px;
+background: #416bfb;
+      border-radius: 6px;
+      margin-right: 10px;
     font-size: 16px;
     text-indent:0;
     text-decoration: none
 }
 a.content-button:hover {
-    background: #49d305;
-    text-decoration: none;
-    color: #333;
-    box-shadow: 0 0 2px 1px #000
+
+  
+    color: #fdb850;
+ 
 }
 a.content-button:active {
-    background: #3fb206;
+    background: #f3790e;
     color: #666
 }
 a.content-button.gray {
@@ -912,9 +914,22 @@ a.content-button.spoiler_links::after {
     left: 0;
     text-align: center
 }
-a.content-button.modal-request:hover {
-    background: #F9E74B
+
+
+a.content-button.master-button {
+    background: #f3790e;
+    background: -moz-linear-gradient(270deg, #f3790e, #fdb850);
+    background: -webkit-linear-gradient(270deg, #f3790e, #fdb850);
+    background: -o-linear-gradient(270deg, #f3790e, #fdb850);
+    background: -ms-linear-gradient(270deg, #f3790e, #fdb850);
+    background: linear-gradient(0deg, #f3790e, #fdb850 );
+ 
 }
+
+a.content-button.master-button:hover {
+    color: #416bfb;
+}
+
 #footer,
 #footer-push {
     height: 250px
@@ -988,7 +1003,7 @@ a.content-button.modal-request:hover {
     content: "";
     width: 23px;
     height: 23px;
-    background: url(assets/templates/uss/img/uss-icons.png) no-repeat 0 4px;
+    background: url(assets/templates/kombat/img/icons.png) no-repeat 0 4px;
     background-position: -106px -66px;
     margin-left: -30px
 }
@@ -1084,7 +1099,7 @@ a.content-button.modal-request:hover {
     bottom: 10px;
     left: 10px;
     display: none;
-    background: url(assets/templates/uss/img/uss-icons.png) no-repeat -4px -97px;
+    background: url(assets/templates/kombat/img/icons.png) no-repeat -4px -97px;
     opacity: 0.4
 }
 a.scrollup {
@@ -1160,7 +1175,6 @@ a.no-link-decor {
     margin: 0;
     padding: 0;
     width: 100%;
-    font-size: 14px;
     text-align: center;
     list-style-type: none
 }
@@ -1170,12 +1184,13 @@ a.no-link-decor {
     margin: 0 16px;
     vertical-align: middle
 }
+
 .menu li a {
     display: block;
-    font-weight: 600;
+ 
     text-decoration: none;
-    color: #047414;
-    padding: 10px 5px;
+    color: #fff;
+    padding: 8px 5px;
     text-align: center
 }
 .menu li:first-child + li ul {
@@ -1187,7 +1202,7 @@ a.no-link-decor {
     width: 100%
 }
 .menu li:hover > a {
-    background: #F9E74B
+    background: #f3790e
 }
 .menu li li:hover > a {
     background: none
@@ -1404,9 +1419,7 @@ a.no-link-decor {
 .modal {
     margin-bottom: 20px
 }
-.modal-request {
-    margin-bottom: 10px
-}
+
 #modal_form,
 #modal_form-request {
     border: 5px solid #389809;
@@ -1578,17 +1591,12 @@ a.no-link-decor {
     }
     #logo {
         float: none;
-        padding-top: 10px
+        padding-top: 2px
     }
     #logo a {
         margin: 0 auto
     }
-    .telephone-shell {
-        width: 82%;
-        margin-left: auto;
-        margin-right: auto;
-        float: none
-    }
+ 
     .slogan {
         display: block;
         width: 74%;
@@ -1699,9 +1707,7 @@ a.no-link-decor {
         width: 208px;
         font-size: 21px
     }
-    .telephone-shell {
-        width: 96%
-    }
+ 
     .telephone .tel1 {
         margin-bottom: 16px
     }
@@ -1831,10 +1837,7 @@ a.no-link-decor {
         margin-bottom: 10px;
         margin-top: 16px
     }
-    .telephone-shell {
-        width: 100%;
-        margin: 0
-    }
+ 
     .telephone {
         width: 216px;
         font-size: 22px;
@@ -1851,8 +1854,10 @@ a.no-link-decor {
         width: 160px;
         font-size: 16px;
         margin: 0 auto;
-        float: none
+        float: none;
+
     }
+
     a.header-email {
         font-size: 17px
     }
@@ -2035,7 +2040,7 @@ a.no-link-decor {
         content: "";
         top: 12px;
         left: 2px;
-        background: url(assets/templates/uss/img/uss-icons.png) no-repeat;
+        background: url(assets/templates/kombat/img/icons.png) no-repeat;
         width: 10px;
         height: 13px;
         background-position: -31px -56px

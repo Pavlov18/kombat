@@ -1,0 +1,77 @@
+. {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.-carousel-down {
+    width: 41px;
+    height: 44px;
+    background-position: -4px -4px;
+}
+
+.-carousel-up {
+    width: 41px;
+    height: 44px;
+    background-position: -53px -4px;
+}
+
+.-custom-bullet {
+    width: 19px;
+    height: 16px;
+    background-position: -4px -56px;
+}
+
+.-dd-arrow {
+    width: 10px;
+    height: 13px;
+    background-position: -31px -56px;
+}
+
+.-dd-arrow-activ-e {
+    width: 10px;
+    height: 13px;
+    background-position: -49px -56px;
+}
+
+.-dd-arrow-active {
+    width: 10px;
+    height: 13px;
+    background-position: -67px -56px;
+}
+
+.-entry-ul-bullet {
+    width: 9px;
+    height: 9px;
+    background-position: -85px -56px;
+}
+
+.-slider-custom-bullet {
+    width: 13px;
+    height: 13px;
+    background-position: -85px -73px;
+}
+
+.-telephone {
+    width: 23px;
+    height: 23px;
+    background-position: -102px -4px;
+}
+
+.-telephone-black {
+    width: 23px;
+    height: 23px;
+    background-position: -102px -35px;
+}
+
+.-telephone-footer {
+    width: 23px;
+    height: 23px;
+    background-position: -106px -66px;
+}
+
+.-up {
+    width: 42px;
+    height: 41px;
+    background-position: -4px -97px;
+}
