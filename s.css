@@ -271,14 +271,14 @@ float:left;
     border: none;
          background: none;
   position: relative;
-  width: 170px;
+  width: 140px;
   height: 30px;
   padding-left: 15px;
   transition: .3s linear;
 }
 
 .search input:focus {
-  width: 200px;
+  width: 170px;
 }
 
 .search button {
@@ -308,13 +308,17 @@ float:left;
 }
  
 .button-search-shell .first-tel {
+
     display: block;
     position: relative;
     margin-left: 28px;
-    color: #000;
+    color: #333;
     text-decoration: none;
+    font-weight: bold;
     text-align: right;
-    cursor: default
+    font-size: 18px;
+    cursor: default;
+
 }
 
 
