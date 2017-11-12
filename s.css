@@ -23,7 +23,7 @@ a:hover {
 .menu a,
 .breadcrumb a,
 .footer a,
-a.content-button,
+.content-button,
 .home-box-item,
 .home-box-item img,
 .home-box-item:hover img,
@@ -49,34 +49,18 @@ select {
 textarea {
     overflow: auto
 }
+
+.notext {
+    font-size: 0;
+    line-height: 0;
+    text-indent: -4000px;}
+
 .table-container {
     width: 100%;
     overflow: auto;
     -webkit-overflow-scrolling: touch
 }
-.cl,
-.cl-col3,
-.cl-slogan {
-    height: 0;
-    font-size: 0;
-    line-height: 0;
-    text-indent: -4000px;
-    clear: both
-}
-.cl {
-    display: block
-}
-.cl-col3 {
-    display: none
-}
-.cl-slogan {
-    display: none
-}
-.notext {
-    font-size: 0;
-    line-height: 0;
-    text-indent: -4000px
-}
+
 .left {
     float: left
 }
@@ -114,12 +98,7 @@ h4 {
     color: #3251b9;
     text-align: left
 }
-#wrapper {
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto -250px
-}
+
 .entry {
     margin-bottom: 0px;
     text-align: justify
@@ -143,6 +122,7 @@ h4 {
     color: #3251b9;
     border-bottom: #ecebeb 1px solid;
     line-height: 30px;
+    text-align: center;
     box-shadow: 0 1px 0 0 #fff, -2px 14px 12px -13px #b4b3b3
 }
 .entry p {
@@ -226,11 +206,17 @@ h4 {
     position: relative;
 }
 
+#header .shell {
+    display: flex;
+    justify-content: space-around;
+        align-items: center;
+}
+
 #logo {
-    float: left;
         margin-right: 14px;
     margin-top: 6px
 }
+
 #logo a {
     display: block;
     width: 230px;
@@ -240,41 +226,25 @@ h4 {
 #logo a:hover {
     opacity: 0.9
 }
- 
-.button-search-shell {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-width: 77%;
-float:left;
-    margin-top:28px;
-    text-align:     center;
 
-}
- 
-
-.search {
-    display: inline-block;
-
-}
  
 .search form {
-     border: 2px solid #193cfe;
-             background: #e0e6fd;
+    display: flex;
+    border: 2px solid #193cfe;
+    background: #e0e6fd;
     border-radius: 6px;
     margin:0;
 }
 
 .search input {
     display:    inline-block;
-    float: left;
     border: none;
-         background: none;
-  position: relative;
-  width: 140px;
-  height: 30px;
-  padding-left: 15px;
-  transition: .3s linear;
+    background: none;
+    position: relative;
+    width: 140px;
+    height: 30px;
+    padding-left: 15px;
+    transition: .3s linear;
 }
 
 .search input:focus {
@@ -283,7 +253,6 @@ float:left;
 
 .search button {
     display:inline-block;
-    float: left;
     position: relative;
     border: none;
     width: 30px;
@@ -307,22 +276,23 @@ float:left;
     background-position: -24px 0px;
 }
  
-.button-search-shell .first-tel {
-
+.first-tel {
     display: block;
     position: relative;
     margin-left: 28px;
-    color: #333;
+    color: #000 ;
     text-decoration: none;
     font-weight: bold;
     text-align: right;
-    font-size: 18px;
+    font-size: 24px;
     cursor: default;
 
 }
 
+.first-tel:hover {text-decoration: none;}
 
-.button-search-shell .first-tel::before {
+
+.first-tel::before {
     content: "";
     position: absolute;
     left: -28px;
@@ -332,7 +302,7 @@ float:left;
     background-position: 0px -24px;
 }
 
-.button-search-shell  .header-email {
+.header-email {
     position: relative;
     margin-left: 28px;
     display: inline-block;
@@ -341,12 +311,12 @@ float:left;
             color: #000;
 }
 
-.button-search-shell  .header-email:hover {
+.header-email:hover {
     cursor: pointer;
 
 }
 
-.button-search-shell  .header-email:before {
+.header-email:before {
     content: "";
     position: absolute;
     left: -28px;
@@ -392,6 +362,25 @@ float:left;
 .sticky-anchor {
     display: none
 }
+
+.index-discription {
+        padding:  30px ;
+    background: url(assets/templates/kombat/img/background2.jpg) 50% center / cover no-repeat transparent;
+    margin: 20px auto;
+
+
+}
+
+.index-discription h2{ 
+    display: block;
+margin: 0;
+    border: none;
+
+    box-shadow: none;
+    color:#fff;
+        font-size: 28px
+}
+
 .sidebar-menu {
     margin-bottom: 10px;
     text-align: left
@@ -528,20 +517,7 @@ float:left;
     font-size: 14px;
     margin-bottom: 10px
 }
-#main.home2 .shell {
-    text-align: justify
-}
  
-#main.home2 .entry img {
-    height: auto;
-    text-align: center;
-    margin: 0 auto;
-    float: left;
-    margin-left: 7px
-}
-#main.home2 .entry h2 {
-    margin-top: 10px
-}
 #content {
     width: 71%;
     margin-bottom: 18px
@@ -589,23 +565,23 @@ float:left;
 .entry .contact-info li a span {
     color: #187d1d
 }
-.home-box {
-    display: block;
-    width: 100%;
+.home-box .shell{
+    display: flex;
+        justify-content: space-around;
+ 
     margin-bottom: 15px
 }
 .home-box a {
     text-decoration: none
 }
 .home-box-item {
-    float: left;
     display: block;
-    background: #e0e6fd;
-    border-radius: 6px;
+ 
+    border-radius: 4px;
     color: #193cfe;
     width: 31%;
     min-height: 236px;
-    margin: 0 7px 14px 7px;
+ 
     text-align: center;
     border: 1px solid #8aa2f5;
     word-wrap: break-word
@@ -650,6 +626,51 @@ color: #2758fd;
 .home-box-item h4 span {
     display: block
 }
+
+
+.index-specialist {
+    background: transparent url(assets/templates/kombat/img/background2-blue.jpg) 50% no-repeat;
+    background-size: cover;
+padding: 60px 0;
+}
+
+.index-specialist .shell {
+display: flex;
+justify-content: space-around;
+}
+
+.index-specialist .text {
+    width: 40%
+}
+
+.index-specialist h3 {
+margin-bottom: 30px;
+font-size: 38px;
+    color: #ffb754;
+}
+
+.index-specialist span {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.index-specialist .specialist-form {
+       width: 40% 
+
+} 
+
+.ajax_form.specialist-form input[type="text"]  {
+margin-bottom: 20px
+
+}
+
+
+.specialist-form .master-button {
+display: block;
+    margin: 0 auto;
+}
+
+
 ul.customBullet {
     list-style: none outside none
 }
@@ -671,7 +692,6 @@ ul.customBullet li a:hover {
 }
 .index-content {
     width: 64%;
-    float: left
 }
 .index-content ul {
     font-size: 14px
@@ -682,7 +702,6 @@ ul.customBullet li a:hover {
 .index-sidebar {
     width: 33%;
     margin-left: 0px;
-    float: right
 }
 .index-sidebar a:hover {
     text-decoration: none
@@ -853,42 +872,33 @@ ul.customBullet li a:hover {
 }
 
 
-a.content-button {
+.content-button,
+.ajax_form .button {
     display: inline-block;
+    cursor: pointer;
     position: relative;
     padding: 6px 14px;
- 
     color: #fff;
-background: #416bfb;
-      border-radius: 6px;
-      margin-right: 10px;
+    background: #416bfb;
+    border-radius: 6px;
+    margin-right: 10px;
     font-size: 16px;
     text-indent:0;
-    text-decoration: none
+    text-decoration: none;
+    border: none;
 }
-a.content-button:hover {
 
-  
+.content-button:hover {
+
+  text-decoration: none;
     color: #fdb850;
  
 }
-a.content-button:active {
+.content-button:active {
     background: #f3790e;
     color: #666
 }
-a.content-button.gray {
-    color: #047414;
-    background: #fff
-}
-a.content-button.gray:hover {
-    background: #ebee05;
-    color: #333;
-    box-shadow: 0 0 2px 1px #000
-}
-a.content-button.gray:active {
-    background: #3fb206;
-    color: #666
-}
+
 .content-button.spoiler_links {
     padding-left: 45px;
     margin-bottom: 30px;
@@ -905,7 +915,7 @@ a.content-button.gray:active {
     content: "-";
     top: 5px
 }
-a.content-button.spoiler_links::after {
+.content-button.spoiler_links::after {
     font-size: 10px;
     position: absolute;
     content: "(свернуть/развернуть форму)";
@@ -920,7 +930,7 @@ a.content-button.spoiler_links::after {
 }
 
 
-a.content-button.master-button {
+.content-button.master-button {
     background: #f3790e;
     background: -moz-linear-gradient(270deg, #f3790e, #fdb850);
     background: -webkit-linear-gradient(270deg, #f3790e, #fdb850);
@@ -930,40 +940,58 @@ a.content-button.master-button {
  
 }
 
-a.content-button.master-button:hover {
+.content-button.master-button:hover,
+.footer-cols .col .content-button:hover   {
     color: #416bfb;
 }
 
-#footer,
-#footer-push {
-    height: 250px
+#footer {
+
+    background:  transparent url('assets/templates/kombat/img/background2.jpg') 50% no-repeat;
+        background-size: cover;
 }
-.footer-cols,
-.footer-cols .shell {
-    background: #101b20;
+
+.footer-cols {
+
     padding-top: 20px;
     padding-bottom: 10px
 }
+
+.footer-cols .shell {
+display: flex;
+
+}
+
 .footer-cols .col {
-    float: left;
+ 
     min-height: 272px;
-    border-right: #19272d solid 1px;
+    border-right: #f9cb94 solid 1px;
     border-left: #000 solid 1px;
     padding-left: 5px;
     padding-right: 5px;
     text-align: center
 }
+
+
+
 .footer-cols .col h3 {
     position: relative;
     font-size: 22px;
-    color: #fff;
+    color: #000;
     margin-bottom: 1px;
     text-transform: none;
     font-weight: bold;
     text-align: center
 }
+
+.footer-cols .col h3 a {
+ 
+    color: #000;
+ 
+}
+
 .footer-cols .col p {
-    color: #fff
+    color: #000
 }
 .footer-cols .col img {
     height: 121px
@@ -981,15 +1009,15 @@ a.content-button.master-button:hover {
 }
 .footer-cols .footer-col3 p {
     margin: 6px auto;
-    color: #cbcbcb;
+    color: #000;
     line-height: 20px
 }
 .footer-cols .footer-col3 p strong {
-    color: #fff
+    color: #000
 }
 .footer-cols .footer-col3 p a,
 .footer-cols .footer-col3 p span {
-    color: #7DC33A;
+    color: #000;
     font-size: 18px
 }
 .footer-cols .footer-col3 p span a,
@@ -1016,8 +1044,7 @@ a.content-button.master-button:hover {
     text-transform: uppercase;
     color: #666;
     font-size: 10px;
-    padding-top: 8px;
-    padding-bottom: 2px
+ 
 }
 .footer-links nav {
     display: block;
@@ -1039,32 +1066,45 @@ a.content-button.master-button:hover {
 }
 .footer-links ul li a {
     display: inline;
-    color: #7DC33A
+    color: #f3790e
 }
-.banner-shell {
-    line-height: 8px
-}
-.footer-count {
-    float: left
-}
-.sbrf-rshb {
-    float: right
-}
-.footer-all-rights {
-    text-transform: none;
-    text-align: center;
-    border-bottom: 1px #7DC33A solid
-}
+
+
 .footer-final {
-    padding: 5px 0
-}
-.footer-final,
-.footer-final a {
+    display: flex;
+    justify-content:   space-around;
+    align-items: center;
+ 
+    padding: 5px 0;
+    color: #f3790e;
     font-size: 12px;
-    text-transform: none;
-    text-align: right;
-    color: #7DC33A
 }
+
+.footer-final .footer-all-rights {
+    display: block;
+}
+
+.footer-final .weblite {
+    color: #f3790e;
+    text-transform: none;
+    text-decoration: underline;
+}
+
+.footer-final .weblite:hover {
+        text-decoration: none;
+}
+
+.footer-final .year {
+display: block;
+}
+
+
+
+
+
+
+
+
 .sitemap ul {
     padding: 10px;
     list-style-type: none;
@@ -1102,15 +1142,17 @@ a.content-button.master-button:hover {
     position: fixed;
     bottom: 10px;
     left: 10px;
+        font-size: 58px;
+        text-align: center;
+          text-shadow: 1px 1px #F3E7CF, -1px -1px #56433D;
+    color: #f3790e;
     display: none;
     background: url(assets/templates/kombat/img/icons.png) no-repeat -4px -97px;
     opacity: 0.4
 }
-a.scrollup {
-    font-size: 0
-}
 .scrollup:hover {
-    opacity: 1
+    opacity: 1;
+    text-decoration: none;
 }
 .desSlideshow {
     background-image: url(assets/media/slider-index/loading.gif);
@@ -1484,8 +1526,6 @@ a.no-link-decor {
     padding-left: 0
 }
 .ajax_form input[type="text"].phone-zv {
-    width: 60%;
-    float: left;
     margin-right: -6px
 }
 .ajax_form input[type="text"].error {
@@ -1533,30 +1573,7 @@ a.no-link-decor {
     background: #ffe500;
     text-decoration: none
 }
-.ajax_form .button {
-    display: block;
-    background-color: #389809;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 17px;
-    font-weight: bold;
-    height: 40px;
-    margin: 10px 0;
-    padding: 2px 16px;
-    width: 210px;
-    margin: 0 auto;
-    -webkit-transition: all 0.12s ease-in;
-    -o-transition: all 0.12s ease-in;
-    -moz-transition: all 0.12s ease-in;
-    transition: all 0.12s ease-in
-}
-.ajax_form .button:hover {
-    background-color: #ffe500;
-    border: 1px solid #389809;
-    color: #000
-}
+
 .ajax_form input[type="text"].field {
     display: none
 }
@@ -1634,7 +1651,7 @@ a.no-link-decor {
     .footer-links nav {
         width: 100%;
         float: none;
-        border-bottom: #101b20 solid 1px;
+        border-bottom: #7391f9 solid 1px;
         margin-bottom: 5px;
         padding-bottom: 5px
     }
@@ -1699,6 +1716,9 @@ a.no-link-decor {
     #header {
         height: auto
     }
+
+
+
     #logo,
     .menu {
         position: static
@@ -1715,7 +1735,7 @@ a.no-link-decor {
     .telephone .tel1 {
         margin-bottom: 16px
     }
-    .telephone a.content-button {
+    .telephone .content-button {
         font-size: 14px;
         padding: 6px 26px
     }
@@ -1849,7 +1869,7 @@ a.no-link-decor {
         margin-bottom: 6px;
         float: none
     }
-    .telephone a.content-button {
+    .telephone .content-button {
         padding: 6px 24px;
         font-size: 14px;
         margin-right: 18px
@@ -2102,4 +2122,12 @@ a.no-link-decor {
     .my-gallery a {
         margin: 0 1px 1px 0
     }
+}
+
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
