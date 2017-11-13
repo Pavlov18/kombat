@@ -366,7 +366,7 @@ h4 {
 .index-discription {
     margin-top:20px;
     padding:  30px ;
-    background: url(assets/templates/kombat/img/background2.jpg) 50% center / cover no-repeat transparent;
+    background: url(assets/templates/kombat/img/background2.jpg) 45% center repeat-x;
 
 
 
@@ -639,8 +639,7 @@ color: #2758fd;
 
 
 .index-specialist {
-    background: transparent url(assets/templates/kombat/img/background2-blue.jpg) 50% no-repeat;
-    background-size: cover;
+    background: transparent url(assets/templates/kombat/img/background2-blue.jpg) 23% repeat-x;
 padding: 60px 0;
 }
 
@@ -953,19 +952,18 @@ ul.customBullet li a:hover {
  
 }
 
-.content-button.master-button:hover,
-.footer-cols .col .content-button:hover   {
+.content-button.master-button:hover  {
     color: #416bfb;
 }
 
-#footer {
 
+#footer {
+    line-height: 28px;
     background:  transparent url('assets/templates/kombat/img/background2.jpg') 50% no-repeat;
         background-size: cover;
 }
 
 .footer-cols {
-
     padding-top: 20px;
     padding-bottom: 10px
 }
@@ -976,15 +974,11 @@ display: flex;
 }
 
 .footer-cols .col {
- 
-    min-height: 272px;
-    border-right: #f9cb94 solid 1px;
-    border-left: #000 solid 1px;
+    width: 33%;
     padding-left: 5px;
     padding-right: 5px;
-    text-align: center
-}
 
+}
 
 
 .footer-cols .col h3 {
@@ -994,7 +988,36 @@ display: flex;
     margin-bottom: 1px;
     text-transform: none;
     font-weight: bold;
-    text-align: center
+
+
+}
+
+.footer-cols .menu-footer {
+    list-style: none;
+    text-align: left;
+    font-size: 20px;
+    line-height: 40px;
+    padding: 0;
+}
+
+.footer-cols .menu-footer li {
+    border-bottom: 1px solid #969696;
+}
+
+
+.footer-cols .menu-footer li:last-child {
+    border-bottom: none;
+}
+
+
+.footer-cols .menu-footer a {
+    color: #000
+}
+
+
+.footer-cols .menu-footer a:hover {
+    text-decoration: none;
+    color: #969696
 }
 
 .footer-cols .col h3 a {
@@ -1006,52 +1029,9 @@ display: flex;
 .footer-cols .col p {
     color: #000
 }
-.footer-cols .col img {
-    height: 121px
-}
-.footer-cols .footer-col1 {
-    width: 28%;
-    border-left: none
-}
-.footer-cols .footer-col2 {
-    width: 40%
-}
-.footer-cols .footer-col3 {
-    width: 28%;
-    border-right: none
-}
-.footer-cols .footer-col3 p {
-    margin: 6px auto;
-    color: #000;
-    line-height: 20px
-}
-.footer-cols .footer-col3 p strong {
-    color: #000
-}
-.footer-cols .footer-col3 p a,
-.footer-cols .footer-col3 p span {
-    color: #000;
-    font-size: 18px
-}
-.footer-cols .footer-col3 p span a,
-.footer-cols .footer-col3 p span a:hover {
-    cursor: text;
-    text-decoration: none
-}
-.footer-cols .footer-col3 h3 {
-    padding-left: 30px;
-    width: 118px;
-    margin: 0 auto
-}
-.footer-cols .footer-col3 h3::before {
-    position: absolute;
-    content: "";
-    width: 23px;
-    height: 23px;
-    background: url(assets/templates/kombat/img/icons.png) no-repeat 0 4px;
-    background-position: -106px -66px;
-    margin-left: -30px
-}
+
+
+
 .footer-links {
     background: #000;
     text-transform: uppercase;
@@ -1640,7 +1620,6 @@ a.no-link-decor {
     .footer-cols .col {
         margin: 0;
         padding: 0;
-        text-align: center
     }
     .footer-cols h3 {
         text-align: center
@@ -1730,8 +1709,6 @@ a.no-link-decor {
         height: auto
     }
 
-
-
     #logo,
     .menu {
         position: static
@@ -1806,21 +1783,10 @@ a.no-link-decor {
     .footer-cols .footer-col3 {
         border: none
     }
-    .footer-count {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 5px
-    }
-    .sbrf-rshb {
-        width: 100%;
-        float: none
-    }
-    .sbrf-rshb img {
-        margin-bottom: 10px
-    }
-    .footer-count a {
-        margin: 0
-    }
+
+
+
+
     #main.home2 .entry img {
         margin: 0;
         width: 100%;
@@ -2171,7 +2137,7 @@ a.no-link-decor {
     width:30px;
     height:30px;
     text-align:center;
-    background:#f47d12 url("../images/arrows.png") no-repeat;
+    background:#f47d12 url("images/arrows.png") no-repeat;
     border-radius:2em;
     -webkit-border-radius:2em;
     -moz-border-radius:2em;
