@@ -7,7 +7,7 @@ body {
     line-height: 22px;
     font-family: 'PT Sans',Verdana,Arial,sans-serif;
     color: #333;
-    background: #fff
+    background: #f6f6f6
 }
 a {
     color: #193cfe;
@@ -364,9 +364,10 @@ h4 {
 }
 
 .index-discription {
-        padding:  30px ;
+    margin-top:20px;
+    padding:  30px ;
     background: url(assets/templates/kombat/img/background2.jpg) 50% center / cover no-repeat transparent;
-    margin: 20px auto;
+
 
 
 }
@@ -457,12 +458,22 @@ margin: 0;
     color: #000
 }
 .promo {
+    background: #fff;
     color: #ff4d00;
-    margin-bottom: 28px
+    width: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
 }
-.promo h2.title {
-    color: #ff4d00
+
+.promo h2 {
+    width: auto;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    color: #ff4d00;
 }
+
 .thanks {
     margin-bottom: 20px
 }
@@ -567,16 +578,15 @@ margin: 0;
 }
 .home-box .shell{
     display: flex;
-        justify-content: space-around;
- 
-    margin-bottom: 15px
+    justify-content: space-around;
+padding:20px 0;
 }
 .home-box a {
     text-decoration: none
 }
 .home-box-item {
     display: block;
- 
+ background: #fff;
     border-radius: 4px;
     color: #193cfe;
     width: 31%;
@@ -652,6 +662,7 @@ font-size: 38px;
 .index-specialist span {
     font-weight: bold;
     font-size: 22px;
+    color: #fff;
 }
 
 .index-specialist .specialist-form {
@@ -669,6 +680,8 @@ margin-bottom: 20px
 display: block;
     margin: 0 auto;
 }
+
+
 
 
 ul.customBullet {
@@ -1779,14 +1792,7 @@ a.no-link-decor {
         padding: 0 7%;
         margin-bottom: 20px
     }
-    .promo,
-    .thanks {
-        width: 300px;
-        margin: 0 auto
-    }
-    .promo {
-        margin-bottom: 45px
-    }
+
     
     .footer-col1,.footer-col2,.footer-col3 {width: 100%}
     .footer-col1,.footer-col2 {
@@ -2130,4 +2136,88 @@ a.no-link-decor {
     content: "";
     display: table;
     clear: both;
+}
+
+
+.content_top{
+  padding:2em 0;
+  background:#FFF;
+}
+.content_top h3{
+    font-size:25px;
+    color:#e44f2b;
+    padding-bottom:15px;
+}
+
+.line{
+  display:block;
+  background:#EEE;
+  height:1px;
+}
+.ocarousel_window {
+    width: 100%;
+}
+.ocarousel {
+    display: none;
+    position:relative;
+}
+.ocarousel span{
+    position:absolute;
+    right:0;
+    top:-70px;
+    width:70px;
+}
+.ocarousel span a.prev,.ocarousel span a.next{
+    width:30px;
+    height:30px;
+    text-align:center;
+    background:#f47d12 url("../images/arrows.png") no-repeat;
+    border-radius:2em;
+    -webkit-border-radius:2em;
+    -moz-border-radius:2em;
+    -o-border-radius:2em;
+}
+.ocarousel span a.prev{
+    background-position:0px 2px;
+}
+.ocarousel span a.next{
+    background-position:-40px 2px;
+}
+.ocarousel span a.prev:hover,.ocarousel span a.next:hover{
+    background-color:#444;
+}
+.ocarousel_window {
+        overflow: hidden;
+        white-space: nowrap;
+        /* default size */
+        width:100%;
+}
+.ocarousel_window_slides {
+            position: relative;
+            margin: 0 auto;
+            overflow: hidden;
+            width: 50000px;
+            white-space: nowrap;
+ }
+.ocarousel_window_slides * {
+            float: left;
+            white-space: normal;
+}
+.ocarousel_window_slides a{
+    border-left:1px solid #F2F2F2;
+    padding:0 35px;
+}
+.ocarousel_window_slides a p{
+  display:block;
+  font-size:14px;
+  color:#f47d12;
+  float:none;
+  text-align:center;    
+}
+.ocarousel_window_slides a:hover p{
+ color:#e44f2b;
+ text-decoration:underline;
+}
+.ocarousel_indicators {
+    width: 100%;
 }
