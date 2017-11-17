@@ -10,7 +10,7 @@ body {
     background: #f6f6f6
 }
 a {
-    color: #193cfe;
+    color: #2376a2;
     text-decoration: none;
     cursor: pointer
 }
@@ -31,7 +31,8 @@ a:hover {
 .entry a img,
 .entry a img:hover,
 .home-box-item h4,
-.home-box-item:hover h4 {
+.home-box-item:hover h4,
+.ocarousel span a {
     -webkit-transition: all ease-out 0.4s;
     -moz-transition: all ease-out 0.4s;
     -o-transition: all ease-out 0.4s;
@@ -158,7 +159,7 @@ h4 {
 .entry ul li::before {
     position: absolute;
     content: "";
-    background: url(assets/templates/kombat/img/icons.png) no-repeat;
+    background: url(img/icons.png) no-repeat;
     width: 9px;
     height: 9px;
     background-position: -85px -56px;
@@ -202,7 +203,7 @@ h4 {
     margin: 0 auto
 }
 #header {
- 
+         background: #fff;
     position: relative;
 }
 
@@ -219,9 +220,10 @@ h4 {
 
 #logo a {
     display: block;
-    width: 230px;
-    height: 74px;
-    background: url(assets/templates/kombat/img/logo.png) no-repeat 0 0
+    width: 124px;
+    height: 78px;
+    background: url(img/logo.jpg) no-repeat 0 0;
+ 
 }
 #logo a:hover {
     opacity: 0.9
@@ -230,7 +232,7 @@ h4 {
  
 .search form {
     display: flex;
-    border: 2px solid #193cfe;
+    border: 2px solid #2376a2;
     background: #e0e6fd;
     border-radius: 6px;
     margin:0;
@@ -260,6 +262,7 @@ h4 {
     background: none;
     cursor: pointer;
     padding:0;
+
  }
 
 
@@ -272,7 +275,7 @@ h4 {
     transform: translate(-50%,-50%);
     width: 24px;
     height: 24px;
-    background: url(assets/templates/kombat/img/icons.png) no-repeat;
+    background: url(img/icons.png) no-repeat;
     background-position: -24px 0px;
 }
  
@@ -282,7 +285,6 @@ h4 {
     margin-left: 28px;
     color: #000 ;
     text-decoration: none;
-    font-weight: bold;
     text-align: right;
     font-size: 24px;
     cursor: default;
@@ -298,7 +300,7 @@ h4 {
     left: -28px;
     width: 24px;
     height: 24px;
-    background: url(assets/templates/kombat/img/icons.png) no-repeat;
+    background: url(img/icons.png) no-repeat;
     background-position: 0px -24px;
 }
 
@@ -322,7 +324,7 @@ h4 {
     left: -28px;
     width: 24px;
     height: 24px;
-    background: url(assets/templates/kombat/img/icons.png) no-repeat;
+    background: url(img/icons.png) no-repeat;
     background-position: 0px 0px;
 }
 
@@ -352,12 +354,12 @@ h4 {
     color: #ffe500
 }
 .sticky-element {
-    background:#416bfb;
-    background: -moz-linear-gradient(90deg, #416bfb, #7391f9);
-    background: -webkit-linear-gradient(90deg, #416bfb, #7391f9);
-    background: -o-linear-gradient(90deg, #416bfb, #7391f9);
-    background: -ms-linear-gradient(90deg, #416bfb, #7391f9);
-    background: linear-gradient(180deg, #416bfb, #7391f9)
+    background: #2376a2;
+    background: -moz-linear-gradient(90deg, #2376a2, #438eb5);
+    background: -webkit-linear-gradient(90deg, #2376a2, #438eb5);
+    background: -o-linear-gradient(90deg, #2376a2, #438eb5);
+    background: -ms-linear-gradient(90deg, #2376a2, #438eb5);
+    background: linear-gradient(180deg, #2376a2, #438eb5);
 }
 .sticky-anchor {
     display: none
@@ -366,7 +368,7 @@ h4 {
 .index-discription {
     margin-top:20px;
     padding:  30px ;
-    background: url(assets/templates/kombat/img/background2.jpg) 45% center repeat-x;
+    background: url(img/background2.jpg) 45% center repeat-x;
 
 
 
@@ -439,7 +441,7 @@ margin: 0;
 .sidebar-menu ul li ul li::before {
     top: 6px;
     left: 10px;
-    background: url(assets/templates/kombat/img/icons.png) no-repeat;
+    background: url(img/icons.png) no-repeat;
     width: 10px;
     height: 13px;
     background-position: -31px -56px
@@ -457,7 +459,61 @@ margin: 0;
     text-decoration: none;
     color: #000
 }
-.promo {
+
+
+/* SUPER SALE */
+.super-sale{
+        background: #416bfb;
+    background: -moz-linear-gradient(90deg, #416bfb, #7391f9);
+    background: -webkit-linear-gradient(90deg, #416bfb, #7391f9);
+    background: -o-linear-gradient(90deg, #416bfb, #7391f9);
+    background: -ms-linear-gradient(90deg, #416bfb, #7391f9);
+    background: url(img/background2-white.jpg) 45% center repeat-x;
+    padding: 40px 0;
+}
+.super-sale h3{
+    width: auto;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 30px;
+    color: #ff4d00;
+}
+
+.super-sale img {
+width: 172px;
+height: 121px;    
+    background: #999
+}
+
+.super-sale .super-sale-block{
+    border-left: 2px solid #eee;
+}
+
+
+
+.sale-icon{
+    background: url(../img/super-sale.png) no-repeat center left;
+        color: #f47d12;
+    padding: 5px 10px 3px 10px;
+    text-transform: uppercase;
+}
+.sale-title{
+    text-transform: uppercase;
+    padding: 8px 0 5px;
+    display: block;
+}
+.sale-announce{
+    line-height: 15px;
+    color: #444;
+    font-size: 14px;
+}
+.super-sale-price{
+    font-size: 24px;
+}
+/* END SUPER SALE */
+
+
+.partner {
     background: #fff;
     color: #ff4d00;
     width: auto;
@@ -466,12 +522,12 @@ margin: 0;
     text-align: center;
 }
 
-.promo h2 {
+.partner h3 {
     width: auto;
     padding-bottom: 20px;
     text-align: center;
     font-size: 30px;
-    color: #ff4d00;
+    color: #2274a3;
 }
 
 .thanks {
@@ -588,26 +644,26 @@ padding:20px 0;
     display: block;
  background: #fff;
     border-radius: 4px;
-    color: #193cfe;
-    width: 31%;
+    color: #2b7ca7;
+    width: 30%;
     min-height: 236px;
- 
+ padding: 6px;
     text-align: center;
-    border: 1px solid #8aa2f5;
+    border: 1px solid #2b7ca7;
     word-wrap: break-word
 }
 .home-box-item:hover {
     text-decoration: none;
-    box-shadow: 0 0 1px 1px #003aff
+    box-shadow: 0 0 11px 3px #2172a1;
 }
 .home-box-item:active {
-    box-shadow: 0 0 2px 1px #003afd
+    box-shadow: 0 0 2px 1px #07a0e8
 }
 .home-box-item h4 {
     min-height: 48px;
     line-height: 16px;
     font-size: 14px;
-    color: #003aff;
+    color: #2172a1;
     font-weight: bold;
     text-transform: none;
     padding: 5px;
@@ -620,9 +676,9 @@ color: #2758fd;
     color: #7794f7
 }
 .home-box-item img {
-    width: 95%;
+    max-width: 340px;
+    max-height: 225px;
     bottom: 0;
-    padding: 6px
 }
 .home-box-item:hover img {
     opacity: 0.7
@@ -639,7 +695,12 @@ color: #2758fd;
 
 
 .index-specialist {
-    background: transparent url(assets/templates/kombat/img/background2-blue.jpg) 23% repeat-x;
+    background: #416bfb;
+    background: -moz-linear-gradient(90deg, #416bfb, #7391f9);
+    background: -webkit-linear-gradient(90deg, #416bfb, #7391f9);
+    background: -o-linear-gradient(90deg, #416bfb, #7391f9);
+    background: -ms-linear-gradient(90deg, #416bfb, #7391f9);
+    background: url(img/background2-blue.jpg) 45% center repeat-x;
 padding: 60px 0;
 }
 
@@ -655,7 +716,8 @@ justify-content: space-around;
 .index-specialist h3 {
 margin-bottom: 30px;
 font-size: 38px;
-    color: #ffb754;
+    line-height: 38px;
+    color: #f7942a;
 }
 
 .index-specialist span {
@@ -670,18 +732,14 @@ font-size: 38px;
 } 
 
 .ajax_form.specialist-form input[type="text"]  {
-margin-bottom: 20px
-
+    margin-bottom: 20px
 }
 
 
-.specialist-form .master-button {
+.specialist-form .orange {
 display: block;
     margin: 0 auto;
 }
-
-
-
 
 ul.customBullet {
     list-style: none outside none
@@ -690,7 +748,7 @@ ul.customBullet li {
     padding-left: 26px
 }
 ul.customBullet li::before {
-    background: url(assets/templates/kombat/img/icons.png) no-repeat;
+    background: url(img/icons.png) no-repeat;
     width: 19px;
     height: 16px;
     background-position: -4px -56px
@@ -721,160 +779,7 @@ ul.customBullet li a:hover {
 .index-sidebar .entry p {
     margin-bottom: 12px
 }
-.slider2 .shell {
-    position: relative
-}
-.slider2 .slider-holder {
-    z-index: 10;
-    width: 98.2%;
-    height: 364px;
-    position: absolute;
-    top: -240px;
-    border: 11px solid #fff;
-    box-shadow: 0 0px 12px 0px #b4b3b3;
-    background: #138f1c;
-    background: url(assets/templates/uss/img/slider2-holder.jpg) no-repeat right 0px, linear-gradient(to top, #048417, #7ec43a)
-}
-.slider2 .slider-holder .content {
-    position: relative;
-    overflow: hidden;
-    height: 336px
-}
-.slider2 .slider-holder .content ul {
-    list-style: none outside none;
-    position: relative;
-    overflow: hidden
-}
-.slider2 .slider-holder .content ul li {
-    position: relative
-}
-.slider2 .slider-holder .content .jcarousel-clip,
-.slider2 .slider-holder .content .jcarousel-container {
-    width: 100%;
-    height: 367px;
-    position: relative;
-    overflow: hidden
-}
-.slider2 .slider-holder .content ul li .image-holder {
-    height: 274px;
-    float: left;
-    display: inline-block;
-    margin: 20px 20px
-}
-.slider2 .slider-holder .content ul li .image-holder img {
-    width: 420px;
-    max-height: 274px;
-    display: block;
-    margin: 0;
-    box-shadow: 2px 2px 12px 0px #000;
-    border-radius: 4px;
-    height: 100%;
-    color: #fff
-}
-.slider2 .slider-holder .content ul li .text-holder {
-    width: 50%;
-    float: left;
-    display: inline-block;
-    margin: 20px 0px
-}
-.slider2 .slider-holder .content ul li .text-holder h3 {
-    padding: 0;
-    font-size: 24px;
-    line-height: 24px;
-    font-weight: bold;
-    color: #fff;
-    text-transform: none;
-    text-shadow: 1px 1px 1px #459126
-}
-.slider2 .slider-holder .content ul li .text-holder p {
-    font-size: 16px;
-    line-height: 24px;
-    color: #fff;
-    margin-bottom: 20px
-}
-.slider2 .slider-holder .content ul li .text-holder ul li {
-    font-size: 16px;
-    color: #fff;
-    width: auto;
-    height: auto;
-    margin-bottom: 3px
-}
-.slider2 .slider-holder .content ul li .text-holder ul li::before {
-    position: absolute;
-    content: "";
-    width: 14px;
-    height: 14px;
-    top: 5px;
-    background: url(assets/templates/kombat/img/icons.png) no-repeat;
-    background-position: -85px -73px;
-    margin-left: -25px
-}
-.slider2 .slider-holder .content ul li .text-holder .slider-btn {
-    margin: 25px 0 0 15px
-}
-.slider2 .slider-holder .slider-bar {
-    height: 50px;
-    background: rgba(12, 93, 24, 0.49);
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    z-index: 100
-}
-.slider2 .slider-holder .slider-bar .content {
-    width: 100%;
-    height: 50px;
-    margin: 0 0 0 20px;
-    padding: 0
-}
-.slider2 .slider-holder .slider-bar .content .jcarousel-clip,
-.slider2 .slider-holder .slider-bar .content .jcarousel-container {
-    width: 780px;
-    height: 50px;
-    border: none
-}
-.slider2 .slider-holder .slider-bar .content ul {
-    z-index: 0;
-    list-style: none outside none;
-    position: relative
-}
-.slider2 .slider-holder .slider-bar .content ul li {
-    width: 780px;
-    height: 50px;
-    position: relative;
-    color: #fff;
-    font-size: 15px;
-    line-height: 50px
-}
-.slider2 .slider-holder .slider-bar .content ul li a {
-    font-weight: bold;
-    color: #EBEE05;
-    font-size: 15px
-}
-.slider2 .slider-holder .slider-bar .content ul li a:hover {
-    color: #fdbb38;
-    text-decoration: none
-}
-.slider2 .slider-holder .slider-bar .carousel-down,
-.slider2 .slider-holder .slider-bar .carousel-up {
-    position: absolute;
-    top: 2px;
-    display: block;
-    width: 41px;
-    height: 44px;
-    font-size: 0;
-    line-height: 0;
-    text-indent: -4000px
-}
-.slider2 .slider-holder .slider-bar .carousel-down {
-    background: url(assets/templates/kombat/img/icons.png) no-repeat 0 0;
-    right: 63px;
-    background-position: -53px -4px
-}
-.slider2 .slider-holder .slider-bar .carousel-up {
-    background: url(assets/templates/kombat/img/icons.png) no-repeat 0 0;
-    right: 18px;
-    background-position: -4px -4px
-}
+
 .spoiler_main {
     background: #b7f698;
     text-align: center;
@@ -891,10 +796,16 @@ ul.customBullet li a:hover {
     position: relative;
     padding: 6px 14px;
     color: #fff;
-    background: #416bfb;
+    background: #2376a2;
+    background: -moz-linear-gradient(90deg, #2376a2, #438eb5);
+    background: -webkit-linear-gradient(90deg, #2376a2, #438eb5);
+    background: -o-linear-gradient(90deg, #2376a2, #438eb5);
+    background: -ms-linear-gradient(90deg, #2376a2, #438eb5);
+    background: linear-gradient(180deg, #2376a2, #438eb5);
     border-radius: 6px;
     margin-right: 10px;
     font-size: 16px;
+    line-height: 22px;
     text-indent:0;
     text-decoration: none;
     border: none;
@@ -942,49 +853,80 @@ ul.customBullet li a:hover {
 }
 
 
-.content-button.master-button {
+.content-button.orange {
     background: #f3790e;
     background: -moz-linear-gradient(270deg, #f3790e, #fdb850);
     background: -webkit-linear-gradient(270deg, #f3790e, #fdb850);
     background: -o-linear-gradient(270deg, #f3790e, #fdb850);
     background: -ms-linear-gradient(270deg, #f3790e, #fdb850);
     background: linear-gradient(0deg, #f3790e, #fdb850 );
- 
 }
 
-.content-button.master-button:hover  {
-    color: #416bfb;
+.content-button.orange:hover  {
+    color: #2376a2;
 }
 
 
 #footer {
     line-height: 28px;
-    background:  transparent url('assets/templates/kombat/img/background2.jpg') 50% no-repeat;
-        background-size: cover;
+    background: #416bfb;
+    background: -moz-linear-gradient(90deg, #416bfb, #7391f9);
+    background: -webkit-linear-gradient(90deg, #416bfb, #7391f9);
+    background: -o-linear-gradient(90deg, #416bfb, #7391f9);
+    background: -ms-linear-gradient(90deg, #416bfb, #7391f9);
+    background: url(img/background2-blue.jpg) 45% center repeat-x;
+    background-size: cover;
 }
 
 .footer-cols {
     padding-top: 20px;
-    padding-bottom: 10px
+    padding-bottom: 38px
 }
 
 .footer-cols .shell {
 display: flex;
+    justify-content:   space-around;
+
+
 
 }
 
 .footer-cols .col {
-    width: 33%;
+    width: 30%;
     padding-left: 5px;
     padding-right: 5px;
 
 }
 
+.footer-mail a,
+.footer-tel a {
+    display: block;
+    color: #fff;
+    font-weight: bold;
+}
 
-.footer-cols .col h3 {
+.footer-mail a {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.footer-mail a:hover {
+    text-decoration: none;
+}
+
+
+.footer-tel a {
+    font-size: 26px;
+}
+
+
+.footer-cols .col h3,
+.footer-cols .col h3 a {
+    display: inline-block;
     position: relative;
+    width: 100%;
     font-size: 22px;
-    color: #000;
+    color: #fff;
     margin-bottom: 1px;
     text-transform: none;
     font-weight: bold;
@@ -992,17 +934,20 @@ display: flex;
 
 }
 
+.footer-cols .col h3 a:hover {
+        color: #f47d12;
+        text-decoration: none;
+}
+
+
 .footer-cols .menu-footer {
     list-style: none;
     text-align: left;
-    font-size: 20px;
-    line-height: 40px;
+    font-size: 18px;
+    line-height: 34px;
     padding: 0;
 }
 
-.footer-cols .menu-footer li {
-    border-bottom: 1px solid #969696;
-}
 
 
 .footer-cols .menu-footer li:last-child {
@@ -1011,31 +956,27 @@ display: flex;
 
 
 .footer-cols .menu-footer a {
-    color: #000
+    color: #fff;
 }
 
 
 .footer-cols .menu-footer a:hover {
     text-decoration: none;
-    color: #969696
+    color: #f47d12
 }
 
-.footer-cols .col h3 a {
- 
-    color: #000;
- 
-}
+
 
 .footer-cols .col p {
-    color: #000
+color: #fff
 }
 
 
 
 .footer-links {
-    background: #000;
+    background: rgba(0, 0, 0, 0.31);
     text-transform: uppercase;
-    color: #666;
+margin-top: -38px;
     font-size: 10px;
  
 }
@@ -1049,8 +990,6 @@ display: flex;
     padding: 0px 0 0 0
 }
 .footer-links ul li {
-    display: inline;
-    border-right: 1px solid #1a1a1a;
     padding-right: 3px;
     margin-right: 3px
 }
@@ -1059,7 +998,6 @@ display: flex;
 }
 .footer-links ul li a {
     display: inline;
-    color: #f3790e
 }
 
 
@@ -1067,14 +1005,15 @@ display: flex;
     display: flex;
     justify-content:   space-around;
     align-items: center;
- 
     padding: 5px 0;
-    color: #f3790e;
+    color: #fff;
     font-size: 12px;
+    font-weight: bold;
 }
 
 .footer-final .footer-all-rights {
     display: block;
+    margin:0;
 }
 
 .footer-final .weblite {
@@ -1089,6 +1028,7 @@ display: flex;
 
 .footer-final .year {
 display: block;
+    margin:0;
 }
 
 
@@ -1140,7 +1080,7 @@ display: block;
           text-shadow: 1px 1px #F3E7CF, -1px -1px #56433D;
     color: #f3790e;
     display: none;
-    background: url(assets/templates/kombat/img/icons.png) no-repeat -4px -97px;
+    background: url(img/icons.png) no-repeat -4px -97px;
     opacity: 0.4
 }
 .scrollup:hover {
@@ -1215,12 +1155,13 @@ a.no-link-decor {
     padding: 0;
     width: 100%;
     text-align: center;
-    list-style-type: none
+    list-style-type: none;
+    text-transform: uppercase;
 }
 .menu li {
     display: inline-block;
     position: relative;
-    margin: 0 16px;
+    margin: 0 14px;
     vertical-align: middle
 }
 
@@ -1229,7 +1170,7 @@ a.no-link-decor {
  
     text-decoration: none;
     color: #fff;
-    padding: 8px 5px;
+    padding: 8px 20px;
     text-align: center
 }
 .menu li:first-child + li ul {
@@ -1548,6 +1489,8 @@ a.no-link-decor {
     transition: background 0.2s linear;
     text-decoration: none
 }
+
+
 .ajax_form .exit:after {
     display: block;
     font-size: 23px;
@@ -1577,532 +1520,7 @@ a.no-link-decor {
 #rh-copy {
     display: none !important
 }
-@media screen and (max-width: 1244px) {
-    .shell {
-        width: 95%
-    }
-    .years {
-        margin: 0
-    }
-    .slogan {
-        display: none
-    }
-    .telephone-shell {
-        width: 56%
-    }
-    .slider2 .slider-holder .content ul li .image-holder {
-        margin: 20px 14px
-    }
-}
-@media screen and (max-width: 1004px) {
-    #content {
-        width: 60%;
-        padding: 3%
-    }
-    .sidebar-widget {
-        padding: 8% 7%;
-        margin-bottom: 10px
-    }
-    #logo {
-        float: none;
-        padding-top: 2px
-    }
-    #logo a {
-        margin: 0 auto
-    }
- 
-    .slogan {
-        display: block;
-        width: 74%;
-        margin-bottom: 20px;
-        margin-top: 33px
-    }
-    .footer-cols .col {
-        margin: 0;
-        padding: 0;
-    }
-    .footer-cols h3 {
-        text-align: center
-    }
-    .footer-cols .footer-col1 {
-        width: 47%
-    }
-    .footer-cols .footer-col2 {
-        width: 47%;
-        margin-bottom: 10px;
-        border-right: none
-    }
-    .cl-col3 {
-        display: block
-    }
-    .footer-cols .footer-col3 {
-        width: 100%;
-        padding-top: 10px;
-        border-left: none
-    }
-    .footer-links nav {
-        width: 100%;
-        float: none;
-        border-bottom: #7391f9 solid 1px;
-        margin-bottom: 5px;
-        padding-bottom: 5px
-    }
-    .footer-links ul li {
-        display: inline-block
-    }
-    .footer-final,
-    .footer-links .shell {
-        text-align: center
-    }
-    img {
-        max-width: 100%
-    }
-    .entry h2.title {
-        margin-top: 0
-    }
-    .slider2 {
-        display: none
-    }
-    .header-home {
-        height: auto;
-        padding-bottom: 10px
-    }
-    .home-box-item {
-        width: 45%
-    }
-    .home-box-item img {
-        height: 77%
-    }
-    .home-box-item h4 {
-        font-size: 14px
-    }
-    #main.home2 .entry h2 {
-        margin-top: 10px
-    }
-    #main.home2 .shell {
-        padding-top: 0;
-        font-size: 100%;
-        -webkit-text-size-adjust: none
-    }
-    #main,
-    #main .shell {
-        background: 0 0;
-        padding: 0 0 15px
-    }
-    .index-sidebar {
-        display: none;
-        width: 100%;
-        margin: 0
-    }
-    .index-content {
-        width: 100%
-    }
-}
-@media screen and (max-width: 653px) {
-    h2 {
-        font-size: 18px
-    }
-    h3 {
-        font-size: 16px
-    }
-    #header {
-        height: auto
-    }
 
-    #logo,
-    .menu {
-        position: static
-    }
-    #logo {
-        width: 100%;
-        margin-bottom: 10px
-    }
-    .telephone {
-        width: 208px;
-        font-size: 21px
-    }
- 
-    .telephone .tel1 {
-        margin-bottom: 16px
-    }
-    .telephone .content-button {
-        font-size: 14px;
-        padding: 6px 26px
-    }
-    .cl-slogan {
-        display: block
-    }
-    .entry p img,
-    .telephone2 a {
-        display: block
-    }
-    .header-email {
-        margin: 0;
-        width: 40%
-    }
-    #content {
-        width: auto;
-        font-size: 120%;
-        -webkit-text-size-adjust: none;
-        float: none
-    }
-    .device-price {
-        margin-bottom: 0
-    }
-    .device-price td:nth-child(3n) {
-        display: none
-    }
-    .entry p img {
-        margin: 0 auto;
-        width: 100%;
-        padding-left: 0;
-        padding-right: 0
-    }
-    #sidebar {
-        width: auto;
-        margin: 0;
-        float: none;
-        margin-bottom: 20px;
-        padding-top: 0
-    }
-    .sidebar-menu {
-        padding: 0 7%;
-        margin-bottom: 20px
-    }
-
-    
-    .footer-col1,.footer-col2,.footer-col3 {width: 100%}
-    .footer-col1,.footer-col2 {
-        display:none;
-        margin-bottom: 10px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #000;
-        border-left: none;
-        border-right: none
-    }
-    .footer-cols .footer-col3 {
-        border: none
-    }
-
-
-
-
-    #main.home2 .entry img {
-        margin: 0;
-        width: 100%;
-        padding-left: 0;
-        padding-right: 0
-    }
-    .home-box-item {
-        width: 98%;
-        min-height: auto;
-        margin: 0 2px 14px;
-        color: #0c5d18;
-        -webkit-text-size-adjust: none
-    }
-    .home-box-item h4 {
-        min-height: auto;
-        padding-top: 12px;
-        padding-bottom: 12px;
-        font-size: 16px
-    }
-    .desSlideshow2 {
-        width: 100%
-    }
-    #modal_form,
-    #modal_form-request {
-        width: 81%;
-        left: 10px;
-        margin: 0;
-        padding: 4px 20px
-    }
-}
-@media screen and (max-width: 480px) {
-    #header {
-        margin-top: 0
-    }
-    #logo {
-        padding-top: 44px
-    }
-    .years {
-        display: none
-    }
-    .slogan {
-        display: none;
-        width: 68%;
-        margin-bottom: 10px;
-        margin-top: 16px
-    }
- 
-    .telephone {
-        width: 216px;
-        font-size: 22px;
-        margin: 0 auto;
-        margin-bottom: 6px;
-        float: none
-    }
-    .telephone .content-button {
-        padding: 6px 24px;
-        font-size: 14px;
-        margin-right: 18px
-    }
-    .telephone2 {
-        width: 160px;
-        font-size: 16px;
-        margin: 0 auto;
-        float: none;
-
-    }
-
-    a.header-email {
-        font-size: 17px
-    }
-    .sidebar-menu ul li {
-        margin-bottom: 15px
-    }
-    .sidebar-menu ul li ul {
-        display: none
-    }
-}
-@media screen and (max-width: 320px) {
-    .slogan {
-        width: 66%
-    }
-    .telephone .tel1 {
-        margin-left: auto;
-        margin-right: auto;
-        float: none;
-        margin-bottom: 25px
-    }
-    .telephone,
-    .telephone2 {
-        float: none;
-        margin-left: auto;
-        margin-right: auto
-    }
-    .telephone {
-        margin-bottom: 10px
-    }
-}
-@media screen and (max-width: 1244px) {
-    .menu li {
-        margin: 0 4px;
-        width: 145px;
-        line-height: 14px;
-        font-size: 12px
-    }
-    .menu li:first-child + li ul {
-        top: 32px;
-        left: -177px;
-        width: 929px
-    }
-    .menu li:first-child + li ul ul {
-        top: 0
-    }
-    .menu li:first-child + li ul li a {
-        line-height: 14px
-    }
-}
-@media (min-width: 768px) and (max-width: 1004px) {
-    .menu ul {
-        display: none;
-        top: 46px
-    }
-    .menu li {
-        margin: 0 2px;
-        width: 114px;
-        line-height: 14px;
-        font-size: 12px
-    }
-    .menu li a {
-        -webkit-text-size-adjust: none;
-        border: none;
-        padding: 5px 0;
-        line-height: 18px
-    }
-    .menu li:first-child + li ul {
-        top: 46px;
-        left: -138px;
-        width: 706px
-    }
-}
-@media (max-width: 767px) {
-    .sticky-anchor {
-        display: block
-    }
-    #sticky {
-        z-index: 99;
-        width: 95%;
-        margin-left: auto;
-        margin-right: auto
-    }
-    .sticky-element {
-        box-shadow: none;
-        background: none
-    }
-    .menu-static-1.fixed {
-        position: fixed;
-        top: 0;
-        width: 95%;
-        box-shadow: 0 0 10px #000
-    }
-    .menu-static-2.fixed {
-        position: fixed;
-        top: 40px;
-        left: 0;
-        right: 0;
-        z-index: 9
-    }
-    .menu {
-        display: none;
-        background: #fff;
-        box-shadow: 0 0 10px #000
-    }
-    .mobile-menu {
-        position: relative;
-        display: block;
-        text-align: center;
-        box-shadow: 0 0 10px #000
-    }
-    .menu ul {
-        padding: 0;
-        display: none;
-        position: relative;
-        top: 0;
-        width: 100%;
-        box-shadow: none;
-        text-align: center
-    }
-    .menu li {
-        display: block;
-        background: #ffffff;
-        margin: 0;
-        background: none;
-        width: 100%;
-        line-height: 26px
-    }
-    .menu li:first-child {
-        margin: 0
-    }
-    .menu li:nth-child(2) ul {
-        left: 0
-    }
-    .menu li a {
-        font-size: 14px;
-        -webkit-text-size-adjust: none
-    }
-    .menu li:hover > ul {
-        display: none
-    }
-    .menu li:hover a {
-        background: none;
-        color: #0c5d18
-    }
-    .menu li:hover > a:hover {
-        color: #7dc33a
-    }
-    .menu li li:hover > a {
-        color: #339900
-    }
-    .menu li li:hover > a:hover {
-        background: none;
-        color: #7dc33a
-    }
-    .menu li:active > a:active,
-    .menu li li:active > a:active {
-        background: #2d9a23;
-        color: #fff
-    }
-    .menu ul li li {
-        border: none
-    }
-    .menu ul li {
-        position: relative;
-        width: 100%;
-        background: none;
-        box-shadow: none;
-        margin: 0
-    }
-    .menu ul li a {
-        font-weight: normal;
-        padding-left: 20px
-    }
-    .menu ul li li a {
-        font-weight: normal;
-        padding: 6px
-    }
-    .menu ul li::before {
-        position: absolute;
-        content: "";
-        top: 12px;
-        left: 2px;
-        background: url(assets/templates/kombat/img/icons.png) no-repeat;
-        width: 10px;
-        height: 13px;
-        background-position: -31px -56px
-    }
-    .menu ul ul li {
-        display: none
-    }
-    .row--nav {
-        font-size: 18px;
-        line-height: 26px
-    }
-    .my-gallery.one-image,
-    .my-gallery.image-float-left,
-    .my-gallery.image-float-right {
-        width: 100%
-    }
-    .my-gallery {
-        width: 100%;
-        margin: 0 auto;
-        float: none
-    }
-    .my-gallery a {
-        margin: 0 4px 4px 0
-    }
-    .section--head p {
-        font-size: 18px;
-        line-height: 24px
-    }
-}
-@media (max-width: 480px) {
-    #sticky {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0
-    }
-    .mobile-menu {
-        margin-bottom: 0
-    }
-    .menu a {
-        font-size: 120%;
-        padding: 10px 8px;
-        -webkit-text-size-adjust: none
-    }
-    .my-gallery a {
-        margin: 0 2px 2px 0;
-        width: 32.5%
-    }
-    .my-gallery a:first-child {
-        width: 98.9%;
-        max-height: inherit
-    }
-}
-@media screen and (max-width: 350px) {
-    .my-gallery a {
-        margin: 0 1px 1px 0
-    }
-}
-
-
-
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
 
 .content_top{
@@ -2150,7 +1568,7 @@ a.no-link-decor {
     background-position:-40px 2px;
 }
 .ocarousel span a.prev:hover,.ocarousel span a.next:hover{
-    background-color:#444;
+    background-color:#2274a3;
 }
 .ocarousel_window {
         overflow: hidden;
