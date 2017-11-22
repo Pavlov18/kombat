@@ -503,6 +503,7 @@ height: 121px;
     text-transform: uppercase;
     padding: 8px 0 5px;
     display: block;
+    font-weight: bold;
 }
 .sale-announce{
     line-height: 15px;
