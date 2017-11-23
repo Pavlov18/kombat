@@ -214,14 +214,16 @@ textarea {
 
 	#logo a {
 		display: block;
-		width: 124px;
+		width: 217px;
 		height: 78px;
-		background: url(img/logo.jpg) no-repeat 0 0;
+		background: url(img/logo-old.png) no-repeat 0 0;
 
 	}
 	#logo a:hover {
 		opacity: 0.9
 	}
+
+.search {width:200px;}
 
 
 	.search form {
