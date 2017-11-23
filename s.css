@@ -7,7 +7,6 @@ body {
 	line-height: 22px;
 	font-family: 'PT Sans',Verdana,Arial,sans-serif;
 	color: #333;
-	background: #f6f6f6
 }
 a {
 	color: #2376a2;
@@ -628,6 +627,12 @@ textarea {
 	.entry .contact-info li a span {
 		color: #187d1d
 	}
+
+	.home-box{
+    background: url(img/background2-white.jpg) 45% center repeat-x;
+ 
+	}
+
 	.home-box .shell{
 		display: flex;
 		justify-content: space-around;
