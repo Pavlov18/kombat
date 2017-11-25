@@ -222,21 +222,19 @@ textarea {
 		opacity: 0.9
 	}
 
-.search {width:200px;}
-
-
+ 	.search {
+display:    inline-block;
+}
 	.search form {
 		display: flex;
-		border: 2px solid #2376a2;
-		background: #e0e6fd;
-		border-radius: 6px;
 		margin:0;
 	}
 
 	.search input {
 		display:    inline-block;
-		border: none;
-		background: none;
+		border: 2px solid #2376a2;
+    	background: #e0e6fd;
+    	border-radius: 6px;
 		position: relative;
 		width: 140px;
 		height: 30px;
@@ -506,6 +504,7 @@ textarea {
 	}
 	.super-sale-price{
 		font-size: 24px;
+		line-height: 28px
 	}
 	/* END SUPER SALE */
 
@@ -707,33 +706,27 @@ textarea {
 		background: url(img/background2-blue.jpg) 45% center repeat;
 		padding: 60px 0;
 	}
+ 
 
-	.index-specialist .shell {
-		display: flex;
-		justify-content: space-around;
-	}
-
-	.index-specialist .text {
-		width: 40%
-	}
+ 
 
 	.index-specialist h3 {
-		margin-bottom: 30px;
+
 		font-size: 38px;
 		line-height: 38px;
 		color: #f7942a;
 	}
 
 	.index-specialist span {
+		display: inline-block;
+				margin-bottom: 20px;
 		font-weight: bold;
 		font-size: 22px;
+		vertical-align: baseline;
 		color: #fff;
 	}
 
-	.index-specialist .specialist-form {
-		width: 40% 
-
-	} 
+ 
 
 	.ajax_form.specialist-form input[type="text"]  {
 		margin-bottom: 20px
@@ -1035,6 +1028,7 @@ textarea {
  
 		align-items: center;
 		padding: 5px 0;
+		margin: 0;
 		color: #fff;
 		font-size: 12px;
 		font-weight: bold;
@@ -2150,9 +2144,7 @@ textarea {
 		#header {
 			margin-top: 44px;
 		}
-		#logo {
-			padding-top: 44px
-		}
+
 		.years {
 			display: none
 		}
@@ -2237,8 +2229,10 @@ textarea {
 	@media screen and (max-width: 992px) {
 		header .content-button.orange,
 		header .modal-request,
-		header .first-tel,
-		header .search {margin: 8px 0;}
-
+		header .first-tel {margin: 8px 0;}
 		header .first-tel {margin-bottom: 20px;}
 	}
+
+	@media screen and (max-width: 1200px) {
+header .search {margin: 8px 0;}
+}
