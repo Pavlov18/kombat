@@ -799,8 +799,8 @@ display:    inline-block;
 		background: -o-linear-gradient(90deg, #2376a2, #438eb5);
 		background: -ms-linear-gradient(90deg, #2376a2, #438eb5);
 		background: linear-gradient(180deg, #2376a2, #438eb5);
+				background-color: #2376a2;
 		border-radius: 6px;
-
 		font-size: 16px;
 		line-height: 22px;
 		text-indent:0;
@@ -857,6 +857,7 @@ display:    inline-block;
 		background: -o-linear-gradient(270deg, #f3790e, #fdb850);
 		background: -ms-linear-gradient(270deg, #f3790e, #fdb850);
 		background: linear-gradient(0deg, #f3790e, #fdb850 );
+		background-color: #f3790e;
 	}
 
 	.content-button.orange:hover  {
@@ -873,6 +874,7 @@ display:    inline-block;
 		background: -ms-linear-gradient(90deg, #416bfb, #7391f9);
 		background: url(img/background2-blue.jpg) 45% center repeat;
 		background-size: cover;
+		background-color: #416bfb;
 	}
 
 	.footer-cols {
