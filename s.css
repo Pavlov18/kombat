@@ -2406,7 +2406,7 @@ padding-bottom: 10px;
 	header .content-button.orange,
 	header .modal-request,
 	header .first-tel,
-	header .search {margin: 32px 0;}
+	header .search {margin: 24px 0;}
 
 
 	@media screen and (max-width: 992px) {
