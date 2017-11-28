@@ -224,7 +224,10 @@ textarea {
 	width: 1200px;
 	margin: 0 auto
 }
-	#header {
+
+#header {
+	position: relative;
+
 	background: #fff;
 	position: relative;
 	padding-bottom: 15px;
@@ -503,6 +506,9 @@ padding-bottom: 10px;
 
 	/* SUPER SALE */
 .super-sale{
+	position: relative;
+	box-shadow: 0 0 12px #777;
+	z-index: 10;
 	background: #416bfb;
 	background: -moz-linear-gradient(90deg, #416bfb, #7391f9);
 	background: -webkit-linear-gradient(90deg, #416bfb, #7391f9);
@@ -565,6 +571,8 @@ padding-bottom: 10px;
 
 
 .partner {
+
+
 	background: #fff;
 	color: #ff4d00;
 	width: auto;
@@ -690,7 +698,9 @@ padding-bottom: 10px;
 }
 
 .home-box {
-	background: url(img/background2-white.jpg) 45% center repeat;
+	position: relative;
+ 
+	background: #fff;
 	padding: 20px 0;
 
 }
@@ -764,12 +774,12 @@ padding-bottom: 10px;
 
 
 .index-specialist {
-	background: #416bfb;
+ 
 	background: -moz-linear-gradient(90deg, #416bfb, #7391f9);
 	background: -webkit-linear-gradient(90deg, #416bfb, #7391f9);
 	background: -o-linear-gradient(90deg, #416bfb, #7391f9);
 	background: -ms-linear-gradient(90deg, #416bfb, #7391f9);
-	background: url(img/background2-blue.jpg) 45% center repeat;
+	background: #135881 url(img/background2-blue.jpg) top repeat-x;
 	padding: 60px 0;
 }
 
@@ -938,15 +948,13 @@ padding-bottom: 10px;
 
 
 	#footer {
+			position: relative;
+ 
+
 	line-height: 28px;
-	background: #416bfb;
-	background: -moz-linear-gradient(90deg, #416bfb, #7391f9);
-	background: -webkit-linear-gradient(90deg, #416bfb, #7391f9);
-	background: -o-linear-gradient(90deg, #416bfb, #7391f9);
-	background: -ms-linear-gradient(90deg, #416bfb, #7391f9);
-	background: url(img/background2-blue.jpg) 45% center repeat;
-	background-size: cover;
-	background-color: #416bfb;
+	background: #135881;
+	background: #135881 url(img/background2-blue.jpg) top repeat-x;
+ 
 }
 
 .footer-cols {
@@ -1985,7 +1993,7 @@ padding-bottom: 10px;
 
 		display: block;
 		text-align: center;
-		box-shadow: 0 0 10px #000
+ 
 }
 
 
@@ -2122,7 +2130,8 @@ padding-bottom: 10px;
 }
 
 .mobile-menu {
-		margin-bottom: 0
+		margin-bottom: 0;
+		box-shadow: 0 0 6px 2px #000; 
 }
 
 .menu a {
