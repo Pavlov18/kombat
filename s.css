@@ -168,7 +168,7 @@ textarea {
 	.entry ul li::before {
 		position: absolute;
 		content: "";
-		background: url(img/icons.png) no-repeat;
+		background: url(assets/templates/kombat/img/icons.png) no-repeat;
 		width: 9px;
 		height: 9px;
 		background-position: -85px -56px;
@@ -240,7 +240,7 @@ textarea {
 		display: block;
 		width: 217px;
 		height: 78px;
-		background: url(img/logo-old.png) no-repeat 0 0;
+		background: url(assets/templates/kombat/img/logo-old.png) no-repeat 0 0;
 
 	}
 	#logo a:hover {
@@ -295,7 +295,7 @@ textarea {
 		transform: translate(-50%,-50%);
 		width: 24px;
 		height: 24px;
-		background: url(img/icons.png) no-repeat;
+		background: url(assets/templates/kombat/img/icons.png) no-repeat;
 		background-position: -24px 0px;
 	}
 
@@ -319,7 +319,7 @@ textarea {
 		left: -32px;
 		width: 24px;
 		height: 24px;
-		background: url(img/icons.png) no-repeat;
+		background: url(assets/templates/kombat/img/icons.png) no-repeat;
 		background-position: 0px -24px;
 	}
 
@@ -343,7 +343,7 @@ textarea {
 		left: -28px;
 		width: 24px;
 		height: 24px;
-		background: url(img/icons.png) no-repeat;
+		background: url(assets/templates/kombat/img/icons.png) no-repeat;
 		background-position: 0px 0px;
 	}
 
@@ -397,7 +397,7 @@ text-decoration: underline;
 	.index-discription {
 
 		padding:  30px ;
-		background: url(img/background2.jpg) 45% center repeat;
+		background: url(assets/templates/kombat/img/background2.jpg) 45% center repeat;
 
 
 
@@ -426,7 +426,7 @@ text-decoration: underline;
 		background: -webkit-linear-gradient(90deg, #416bfb, #7391f9);
 		background: -o-linear-gradient(90deg, #416bfb, #7391f9);
 		background: -ms-linear-gradient(90deg, #416bfb, #7391f9);
-		background: url(img/background2-white.jpg) 45% center repeat;
+		background: url(assets/templates/kombat/img/background2-white.jpg) 45% center repeat;
 		padding: 40px 0;
 	}
 
@@ -451,7 +451,7 @@ text-decoration: underline;
 
 
 	.sale-icon{
-		background: url(../img/super-sale.png) no-repeat center left;
+		background: url(../assets/templates/kombat/img/super-sale.png) no-repeat center left;
 		color: #f47d12;
 		padding: 5px 10px 3px 10px;
 		text-transform: uppercase;
@@ -577,7 +577,7 @@ text-decoration: underline;
 	}
 
 	.sidebar-menu ul li a:hover {
-		background: #135881 url(img/background2-blue.jpg);
+		background: #135881 url(assets/templates/kombat/img/background2-blue.jpg);
 		background-size: cover;
 		color: #fff;
 
@@ -599,7 +599,7 @@ text-decoration: underline;
 	}
 
 	.sidebar-menu ul li ul li.active {
-		background: #135881 url(img/background2-blue.jpg);
+		background: #135881 url(assets/templates/kombat/img/background2-blue.jpg);
 		padding: 8px 10px 6px;
 		background-size: cover;
 		color: #fff;
@@ -694,7 +694,7 @@ text-decoration: underline;
 		background: -webkit-linear-gradient(90deg, #416bfb, #7391f9);
 		background: -o-linear-gradient(90deg, #416bfb, #7391f9);
 		background: -ms-linear-gradient(90deg, #416bfb, #7391f9);
-		background: #135881 url(img/background2-blue.jpg) top repeat-x;
+		background: #135881 url(assets/templates/kombat/img/background2-blue.jpg) top repeat-x;
 		padding-top: 30px;
 		line-height: 0;
 	}
@@ -703,7 +703,7 @@ text-decoration: underline;
 		display: inline-block;
 		width: 229px;
 		height: 408px;
-		background: url(images/product/girl-operator.png) bottom no-repeat;
+		background: url(assets/templates/kombat/img/product/girl-operator.png) bottom no-repeat;
 	}
 
 	.index-specialist .text {
@@ -744,7 +744,7 @@ text-decoration: underline;
 	}
 
 	.index-specialist.product {
-    background: #ffae2e url(img/background2.jpg) top repeat;
+    background: #ffae2e url(assets/templates/kombat/img/background2.jpg) top repeat;
 	position: relative;
 	box-shadow: 0 0 12px #777;
 	z-index: 10;
@@ -772,7 +772,7 @@ text-decoration: underline;
 		padding-left: 26px
 	}
 	ul.customBullet li::before {
-		background: url(img/icons.png) no-repeat;
+		background: url(assets/templates/kombat/img/icons.png) no-repeat;
 		width: 19px;
 		height: 16px;
 		background-position: -4px -56px
@@ -903,7 +903,7 @@ text-decoration: underline;
 		position: relative;
 		line-height: 28px;
 		background: #135881;
-		background: #135881 url(img/background2-blue.jpg) top repeat-x;
+		background: #135881 url(assets/templates/kombat/img/background2-blue.jpg) top repeat-x;
 
 	}
 
@@ -1107,7 +1107,7 @@ text-decoration: underline;
 		text-shadow: 1px 1px #F3E7CF, -1px -1px #56433D;
 		color: #f3790e;
 		display: none;
-		background: url(img/icons.png) no-repeat -4px -97px;
+		background: url(assets/templates/kombat/img/icons.png) no-repeat -4px -97px;
 		opacity: 0.4
 	}
 
@@ -1672,7 +1672,7 @@ text-decoration: underline;
 		width:30px;
 		height:30px;
 		text-align:center;
-		background:#f47d12 url("images/arrows.png") no-repeat;
+		background:#f47d12 url("assets/templates/kombat/img/arrows.png") no-repeat;
 		border-radius:2em;
 		-webkit-border-radius:2em;
 		-moz-border-radius:2em;
@@ -2006,7 +2006,7 @@ text-decoration: underline;
 			content: "";
 			top: 12px;
 			left: 2px;
-			background: url(assets/templates/uss/img/uss-icons.png) no-repeat;
+			background: url(assets/templates/uss/assets/templates/kombat/img/uss-icons.png) no-repeat;
 			width: 10px;
 			height: 13px;
 			background-position: -31px -56px
