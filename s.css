@@ -17,7 +17,9 @@ a {
 a:hover {
     text-decoration: underline
 }
+
 #logo a,
+#header a,
 .entry a,
 .col a,
 .menu a,
@@ -656,6 +658,9 @@ ul.customBullet li a {
 ul.customBullet li a:hover {
     text-decoration: none
 }
+
+
+
 .spoiler_main {
     background: #b7f698;
     text-align: center;
@@ -663,41 +668,39 @@ ul.customBullet li a:hover {
     padding: 5px;
     margin-bottom: 15px
 }
+
 .content-button,
 .ajax_form .button {
     display: inline-block;
+    color:#fff;
     min-width: 154px;
     cursor: pointer;
     position: relative;
     padding: 10px 14px;
-    color: #fff;
-    background: #2376a2;
-    background: -moz-linear-gradient(90deg, #2376a2, #438eb5);
-    background: -webkit-linear-gradient(90deg, #2376a2, #438eb5);
-    background: -o-linear-gradient(90deg, #2376a2, #438eb5);
-    background: -ms-linear-gradient(90deg, #2376a2, #438eb5);
-    background: linear-gradient(180deg, #2376a2, #438eb5);
-    background-color: #2376a2;
     border-radius: 16px;
     font-size: 16px;
     line-height: 22px;
     text-indent: 0;
-    text-decoration: none;
     border: none;
+    background: #3797ca;
 }
+
 .content-button:hover {
+    background: #105a82;
     text-decoration: none;
-    color: #fdb850;
+    color: #fff;
 }
+
 .content-button:active {
-    background: #f3790e;
-    color: #666
+	color:#999
 }
+
 .content-button.spoiler_links {
     padding-left: 45px;
     margin-bottom: 30px;
     margin-top: 10px
 }
+
 .content-button.spoiler_links::before {
     content: "+";
     position: absolute;
@@ -705,10 +708,12 @@ ul.customBullet li a:hover {
     font-size: 18px;
     padding-left: 20px
 }
+
 .content-button.closed.spoiler_links::before {
     content: "-";
     top: 5px
 }
+
 .content-button.spoiler_links::after {
     font-size: 10px;
     position: absolute;
@@ -722,18 +727,18 @@ ul.customBullet li a:hover {
     left: 0;
     text-align: center
 }
+
 .content-button.orange {
-    background: #f3790e;
-    background: -moz-linear-gradient(270deg, #f3790e, #fdb850);
-    background: -webkit-linear-gradient(270deg, #f3790e, #fdb850);
-    background: -o-linear-gradient(270deg, #f3790e, #fdb850);
-    background: -ms-linear-gradient(270deg, #f3790e, #fdb850);
-    background: linear-gradient(0deg, #f3790e, #fdb850);
-    background-color: #f3790e;
+    background: #fba014
 }
+
 .content-button.orange:hover {
-    color: #2376a2;
+    background: #f3790e;
 }
+
+
+
+
 #main {
     background: #fff;
 }
@@ -1770,25 +1775,7 @@ a.no-link-decor {
     #logo {
         width: 100%;
     }
-    .telephone {
-        width: 208px;
-        font-size: 21px
-    }
-    .telephone-shell {
-        width: 96%
-    }
-    .telephone .tel1 {
-        margin-bottom: 16px
-    }
-    .telephone a.content-button {
-        font-size: 14px;
-        padding: 6px 26px
-    }
-    .cl-slogan {
-        display: block
-    }
-    .entry p img,
-    .telephone2 a {
+    .entry p img {
         display: block
     }
     .header-email {
@@ -1833,28 +1820,6 @@ a.no-link-decor {
     #header {
         padding-top: 44px;
     }
-    .telephone-shell {
-        width: 100%;
-        margin: 0
-    }
-    .telephone {
-        width: 216px;
-        font-size: 22px;
-        margin: 0 auto;
-        margin-bottom: 6px;
-        float: none
-    }
-    .telephone a.content-button {
-        padding: 6px 24px;
-        font-size: 14px;
-        margin-right: 18px
-    }
-    .telephone2 {
-        width: 160px;
-        font-size: 16px;
-        margin: 0 auto;
-        float: none
-    }
     a.header-email {
         font-size: 17px
     }
@@ -1866,24 +1831,6 @@ a.no-link-decor {
     }
 }
 @media screen and (max-width: 320px) {
-    .slogan {
-        width: 66%
-    }
-    .telephone .tel1 {
-        margin-left: auto;
-        margin-right: auto;
-        float: none;
-        margin-bottom: 25px
-    }
-    .telephone,
-    .telephone2 {
-        float: none;
-        margin-left: auto;
-        margin-right: auto
-    }
-    .telephone {
-        margin-bottom: 10px
-    }
 }
 .vertical-align {
     display: flex;
