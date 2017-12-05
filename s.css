@@ -7,7 +7,7 @@ body {
     line-height: 22px;
     font-family: 'PT Sans', Verdana, Arial, sans-serif;
     color: #333;
-    background-color: #0d3d59
+    background-color: #f2f2f2;
 }
 a {
     color: #2376a2;
@@ -185,17 +185,27 @@ h4 {
 .entry ul li a:hover {
     text-decoration: none
 }
-.shell {
+.shell, .shell-shadow {
     position: relative;
     width: 1200px;
     margin: 0 auto
 }
+
+.shell-shadow {
+    background-color: #fff;
+    box-shadow: 0 5px 15px 0 rgba(0,1,1,.15);
+}
+
 #header {
     position: relative;
-    background: #fff;
-    position: relative;
-    padding-bottom: 15px;
+
 }
+
+.header-home {
+    background-color: #fff;
+    padding-bottom: 20px;
+}
+
 #logo {
     margin-top: 6px
 }
@@ -300,6 +310,7 @@ h4 {
     background: -o-linear-gradient(90deg, #2376a2, #438eb5);
     background: -ms-linear-gradient(90deg, #2376a2, #438eb5);
     background: linear-gradient(180deg, #2376a2, #438eb5);
+    box-shadow: 0 0px 3px 3px rgba(0,1,1,.15);
 }
 .sticky-anchor {
     display: none
@@ -307,20 +318,25 @@ h4 {
 /* хлебные крошки */
 
 .breadcrumb {
-    background-color: #fff;
+ 
+ 
+    background: none;
+    display: block;
+    width: 95%;
+    margin: 15px 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 15px;
     list-style: none;
-    display: inline-block;
-    margin-left: 25px;
-    margin-top: 10px;
-    margin-bottom: 0;
-    padding-bottom: 0
+    border-radius: 16px;
+  
 }
 .breadcrumb a {
-    color: #f48015;
+    color: #f3790e;
     text-decoration: underline;
 }
 .breadcrumb>.active {
-    color: #ffba79;
+    color: #4e4a43;
     text-decoration: none;
 }
 .index-discription {
@@ -735,12 +751,9 @@ ul.customBullet li a:hover {
 .content-button.orange:hover {
     background: #f3790e;
 }
-
-
-
-
 #main {
-    background: #fff;
+    background: #f2f2f2;
+
 }
 .credo {
     position: relative;
@@ -1106,7 +1119,7 @@ a.no-link-decor {
     background: linear-gradient(180deg, #2376a2, #438eb5);
     background-color: #2376a2;
     text-decoration: none !important;
-    border-radius: 4px;
+    border-radius: 16px;
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 700;
@@ -1716,18 +1729,7 @@ a.no-link-decor {
     .shell {
         width: 95%
     }
-    .years {
-        margin: 0
-    }
-    .slogan {
-        display: none
-    }
-    .telephone-shell {
-        width: 56%
-    }
-    .slider2 .slider-holder .content ul li .image-holder {
-        margin: 20px 14px
-    }
+
 }
 @media screen and (max-width: 1004px) {
     .sidebar-widget {
