@@ -192,7 +192,7 @@ h4 {
 }
 
 .shell-shadow {
-    background: #fff;
+    background-color: #fff;
     box-shadow: 0 10px 15px 0 rgba(0,1,1,.15);
 }
 
@@ -202,7 +202,7 @@ h4 {
 }
 
 .header-home {
-    background: #fff;
+    background-color: #fff;
     padding-bottom: 20px;
 }
 
@@ -761,7 +761,7 @@ ul.customBullet li a:hover {
     position: relative;
     box-shadow: 0 0 12px #777;
     z-index: 10;
-    background: #f3790e;
+    background-color: #f3790e;
     color: #ffffff;
     font-style: italic;
     font-size: 18px;
@@ -1260,7 +1260,7 @@ a.no-link-decor {
 #modal_form,
 #modal_form-request {
     border: 5px solid #2578a3;
-    background: #FFF;
+    background-color: #FFF;
     background: #fff;
     position: fixed;
     bottom: 0;
