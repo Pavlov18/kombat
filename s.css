@@ -193,7 +193,7 @@ h4 {
 
 .shell-shadow {
     background-color: #fff;
-    box-shadow: 0 5px 15px 0 rgba(0,1,1,.15);
+    box-shadow: 0 10px 15px 0 rgba(0,1,1,.15);
 }
 
 #header {
@@ -304,6 +304,8 @@ h4 {
     background-position: 0px 0px;
 }
 .sticky-element {
+	position: relative;
+	z-index: 99;
     background: #2376a2;
     background: -moz-linear-gradient(90deg, #2376a2, #438eb5);
     background: -webkit-linear-gradient(90deg, #2376a2, #438eb5);
@@ -1119,7 +1121,6 @@ a.no-link-decor {
     background: linear-gradient(180deg, #2376a2, #438eb5);
     background-color: #2376a2;
     text-decoration: none !important;
-    border-radius: 16px;
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 700;
@@ -1464,6 +1465,8 @@ a.no-link-decor {
 .ocarousel_indicators {
     width: 100%;
 }
+
+
 @media screen and (max-width: 653px) {
     h2 {
         font-size: 18px
@@ -1589,6 +1592,7 @@ a.no-link-decor {
     }
     .mobile-menu {
         position: relative;
+
         display: block;
         text-align: center;
     }
@@ -1696,6 +1700,9 @@ a.no-link-decor {
     }
 }
 @media (max-width: 480px) {
+
+
+
     #sticky {
         position: fixed;
         top: 0;
@@ -1704,7 +1711,8 @@ a.no-link-decor {
     }
     .mobile-menu {
         margin-bottom: 0;
-        box-shadow: 0 0 6px 2px #000;
+        border-radius: 16px;
+        box-shadow: 0 6px 6px 0 rgba(0,1,1,.15);
     }
     .menu a {
         font-size: 120%;
@@ -1742,6 +1750,7 @@ a.no-link-decor {
     #logo a {
         margin: 0 auto
     }
+
     img {
         max-width: 100%
     }
@@ -1819,8 +1828,8 @@ a.no-link-decor {
     }
 }
 @media screen and (max-width: 480px) {
-    #header {
-        padding-top: 44px;
+    #logo {
+        margin-top: 50px;
     }
     a.header-email {
         font-size: 17px
@@ -1831,7 +1840,14 @@ a.no-link-decor {
     .sidebar-menu ul li ul {
         display: none
     }
+    .breadcrumb {
+    	background: #e0e6fd;
+    	border: 1px solid #2376a2;
+    	margin-top: 5px;
+    }
+
 }
+
 @media screen and (max-width: 320px) {
 }
 .vertical-align {
@@ -1853,21 +1869,35 @@ a.no-link-decor {
 .left-block {
     float: left;
 }
+
+.no-padding {padding: 0;}
+
 header .content-button.orange,
 header .modal-request,
 header .first-tel,
 header .search {
     margin: 20px 0;
 }
-@media screen and (max-width: 992px) {
-    header .content-button.orange,
-    header .modal-request,
-    header .first-tel {
-        margin: 8px 0;
-    }
-}
+
 @media screen and (max-width: 1200px) {
     header .search {
         margin: 8px 0;
+        margin-bottom: 28px;
     }
+    .search input {
+		width: 240px;
+	}
+	.search input:focus {
+    	width: 290px;
+	}
+ }
+
+@media screen and (max-width: 992px) {
+    header .content-button.orange,
+    header .modal-request,
+    header .first-tel { margin: 8px 0; }
+	header .search { margin-bottom:  10px;
+	}
 }
+
+
