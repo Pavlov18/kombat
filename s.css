@@ -6,8 +6,8 @@ body {
     font-size: 16px;
     line-height: 22px;
     font-family: 'PT Sans', Verdana, Arial, sans-serif;
-    color: #333;
-    background-color: #111;
+    color: #fff;
+    background-color: #135881;
 }
 a {
     color: #2376a2;
@@ -198,12 +198,12 @@ h4 {
 
 #header {
     position: relative;
+    background-color: #f2f2f2;
 
 }
 
-.header-home {
-    background-color: #fff;
-    padding-bottom: 20px;
+.header-home .first-tel {
+    margin-bottom: 20px;
 }
 
 #logo {
@@ -337,11 +337,15 @@ h4 {
     color: #f3790e;
     text-decoration: underline;
 }
+.breadcrumb a:hover {
+	text-decoration: none;}
+
 .breadcrumb>.active {
     color: #4e4a43;
     text-decoration: none;
 }
 .index-discription {
+	position: relative;
     padding: 30px;
     background: url(assets/templates/kombat/img/background2.jpg) 45% center repeat;
 }
@@ -367,6 +371,7 @@ h4 {
     background: -ms-linear-gradient(90deg, #416bfb, #7391f9);
     background: url(assets/templates/kombat/img/background2-white.jpg) 45% center repeat;
     padding: 40px 0;
+    color: #333;
 }
 .super-sale h3 {
     width: auto;
@@ -537,10 +542,14 @@ h4 {
 }
 .home-box {
     position: relative;
-    background: #fff;
+    background:#f2f2f2;
     padding: 0;
-    padding-top: 20px;
 }
+
+.home-box .shell {
+	padding-top: 20px;
+}
+
 .home-box a {
     text-decoration: none
 }
@@ -596,6 +605,7 @@ h4 {
     display: block
 }
 .index-specialist {
+	position: relative;
     background: -moz-linear-gradient(90deg, #416bfb, #7391f9);
     background: -webkit-linear-gradient(90deg, #416bfb, #7391f9);
     background: -o-linear-gradient(90deg, #416bfb, #7391f9);
@@ -755,6 +765,7 @@ ul.customBullet li a:hover {
 }
 #main {
     background: #f2f2f2;
+    color: #333;
 
 }
 .credo {
@@ -775,6 +786,7 @@ ul.customBullet li a:hover {
     background: #135881;
     background: #135881 url(assets/templates/kombat/img/background2-blue.jpg) top repeat-x;
         box-shadow: 0 0 12px #777;
+        color:#fff;
 }
 .footer-cols {
     padding-top: 20px;
@@ -1015,6 +1027,7 @@ a.no-link-decor {
     text-align: center;
     list-style-type: none;
     text-transform: uppercase;
+
 }
 .menu li {
     display: inline-block;
@@ -1127,6 +1140,7 @@ a.no-link-decor {
     font-weight: 700;
     z-index: 9999
 }
+
 .mobile-menu::before {
     position: absolute;
     content: "";
@@ -1538,6 +1552,8 @@ a.no-link-decor {
     }
 }
 @media screen and (max-width: 320px) {} @media screen and (max-width: 1244px) {
+
+
     .menu li:first-child + li ul ul {
         top: 0
     }
@@ -1548,6 +1564,7 @@ a.no-link-decor {
 @media (min-width: 768px) and (max-width: 1004px) {
     .menu ul {
         display: none;
+        	top: 38px;
     }
     .menu li {
         margin: 0 10px;
@@ -1564,7 +1581,6 @@ a.no-link-decor {
     }
     #sticky {
         z-index: 99;
-        width: 95%;
         margin-left: auto;
         margin-right: auto
     }
@@ -1576,7 +1592,11 @@ a.no-link-decor {
         text-decoration: none;
         position: fixed;
         top: 0;
-        width: 95%;
+margin:auto;
+left:0;
+right:0;
+border-radius: 16px;
+        width: 97%;
         box-shadow: 0 0 10px #000
     }
     .menu-static-2.fixed {
@@ -1588,12 +1608,12 @@ a.no-link-decor {
     }
     .menu {
         display: none;
-        background: #fff;
-        box-shadow: 0 0 10px #000
+        background: #fff1dc;
+        box-shadow: 0 0px 3px 3px rgba(0,1,1,.15);
     }
     .mobile-menu {
         position: relative;
-
+	box-shadow: 0 0px 3px 3px rgba(0,1,1,.15);
         display: block;
         text-align: center;
     }
@@ -1711,9 +1731,13 @@ a.no-link-decor {
         right: 0
     }
     .mobile-menu {
+    	width: 97%;
+    	margin-left: auto;
+    	margin-right: auto;
         margin-bottom: 0;
         border-radius: 16px;
         box-shadow: 0 6px 6px 0 rgba(0,1,1,.15);
+
     }
     .menu a {
         font-size: 120%;
@@ -1757,9 +1781,6 @@ a.no-link-decor {
     }
     .entry h2.title {
         margin-top: 0
-    }
-    .header-home {
-        height: auto;
     }
     .index-sidebar {
         display: none;
