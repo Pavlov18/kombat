@@ -23,6 +23,8 @@ a:hover {
 .entry a,
 .col a,
 .menu a,
+.mobile-menu,
+.mobile-menu:hover,
 .breadcrumb a,
 .footer a,
 .content-button,
@@ -580,7 +582,7 @@ h4 {
 .home-box-item h4 {
     min-height: 48px;
     line-height: 16px;
-    font-size: 14px;
+    font-size: 18px;
     color: #2172a1;
     font-weight: bold;
     text-transform: none;
@@ -588,7 +590,7 @@ h4 {
     text-align: center
 }
 .home-box-item:hover h4 {
-    color: #2758fd;
+    color: #5ab9f1;
 }
 .home-box-item:active h4 {
     color: #7794f7
@@ -1134,12 +1136,6 @@ a.no-link-decor {
     padding: 10px 0;
     color: #fff;
     background: #2376a2;
-    background: -moz-linear-gradient(90deg, #2376a2, #438eb5);
-    background: -webkit-linear-gradient(90deg, #2376a2, #438eb5);
-    background: -o-linear-gradient(90deg, #2376a2, #438eb5);
-    background: -ms-linear-gradient(90deg, #2376a2, #438eb5);
-    background: linear-gradient(180deg, #2376a2, #438eb5);
-    background-color: #2376a2;
     text-decoration: none !important;
     font-size: 16px;
     text-transform: uppercase;
@@ -1158,10 +1154,17 @@ a.no-link-decor {
     top: 20px;
     right: 17px
 }
+
 .mobile-menu:hover {
-    background: #ffbe41;
-    text-decoration: none
+    text-decoration: none;
+    background: #ffbf47;
+    color: #fff;
 }
+
+ .mobile-menu:focus {
+ 	color: #fff;
+ }
+
 .my-gallery {
     width: 100%;
     margin-bottom: 14px;
@@ -1614,7 +1617,11 @@ border-radius: 16px;
     }
     .menu {
         display: none;
-        background: #fff1dc;
+        background: #f4fbff;
+		margin-top: -5px;
+    	padding-top: 10px;
+        border:5px solid #438eb5;
+        border-top:none;
         box-shadow: 0 0px 3px 3px rgba(0,1,1,.15);
     }
     .mobile-menu {
@@ -1655,11 +1662,8 @@ border-radius: 16px;
         display: none
     }
     .menu li:hover a {
-        background: none;
-        color: #0c5d18
-    }
-    .menu li:hover > a:hover {
-        color: #91bad1
+        background: #46a7da;
+        color: #fff;
     }
     .menu li li:hover > a {
         color: #339900
@@ -1670,7 +1674,7 @@ border-radius: 16px;
     }
     .menu li:active > a:active,
     .menu li li:active > a:active {
-        background: #2d9a23;
+        background: #2274a3;
         color: #fff
     }
     .menu ul li li {
