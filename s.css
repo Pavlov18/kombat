@@ -774,6 +774,7 @@ ul.customBullet li a:hover {
     line-height: 28px;
     background: #135881;
     background: #135881 url(assets/templates/kombat/img/background2-blue.jpg) top repeat-x;
+        box-shadow: 0 0 12px #777;
 }
 .footer-cols {
     padding-top: 20px;
