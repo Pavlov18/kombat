@@ -631,7 +631,7 @@ h4 {
     text-align: center;
     display: inline-block;
     margin: 20px 0;
-    text-shadow: 1px 1px 3px #111;
+    text-shadow: 1px 1px 3px #222;
 }
 .index-specialist span {
     display: block;
@@ -665,8 +665,9 @@ h4 {
 }
 .index-specialist.product h3,
 .index-specialist.product .master-tel {
-    color: #2477a2;
+    color: #54a4ce;
 }
+
 .ajax_form.specialist-form input[type="text"] {
     margin-bottom: 20px
 }
