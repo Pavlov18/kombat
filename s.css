@@ -570,6 +570,7 @@ h4 {
 }
 .sidebar-action p {
     display: block;
+    text-indent: 0;
 }
 .sidebar-action span {
     font-weight: bold;
