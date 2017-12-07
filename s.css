@@ -92,19 +92,19 @@ textarea {
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 26px;
     line-height: 28px
 }
 h2 {
-    font-size: 20px;
-    line-height: 24px
+    font-size: 24px;
+    line-height: 26px
 }
 h3 {
-    font-size: 18px;
-    line-height: 22px
+    font-size: 22px;
+    line-height: 24px
 }
 h4 {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 20px
 }
 .shell h1,
@@ -142,7 +142,8 @@ h4 {
     color: #2879a5;
     border-bottom: #ecebeb 1px solid;
     line-height: 30px;
-    text-align: center;
+    text-align: left;
+    text-indent: 20px;
     box-shadow: 0 1px 0 0 #fff, -2px 14px 12px -13px #b4b3b3
 }
 .entry p {
@@ -353,7 +354,7 @@ h4 {
 .breadcrumb {
     background: none;
     display: block;
-    width: 95%;
+    width: 96.5%;
     margin: 15px 0;
     margin-left: auto;
     margin-right: auto;
@@ -362,7 +363,7 @@ h4 {
     border-radius: 16px;
 }
 .breadcrumb a {
-    color: #f3790e;
+    color: #3688b4;
     text-decoration: underline;
 }
 .breadcrumb a:hover {
@@ -458,9 +459,7 @@ h4 {
     font-size: 30px;
     color: #2274a3;
 }
-#content h2 {
-    text-align: left;
-}
+
 #content .gallery-device {
     text-align: center;
     margin: 0;
@@ -480,6 +479,9 @@ h4 {
     text-align: left;
     margin-bottom: 20px;
 }
+
+#sidebar h3 {text-indent: 0}
+
 #sidebar a {
     text-decoration: none
 }
@@ -566,7 +568,8 @@ h4 {
     text-align: center;
 }
 .sidebar-action h3 {
-    color: #c90000;
+    color: #fba014;
+    text-align: center;
 }
 .sidebar-action p {
     display: block;
@@ -655,7 +658,7 @@ h4 {
     text-align: center;
     display: inline-block;
     margin: 20px 0;
-    text-shadow: 1px 1px 3px #222;
+    text-shadow: 1px 1px 1px #222;
 }
 .index-specialist span {
     display: block;
@@ -689,7 +692,7 @@ h4 {
 }
 .index-specialist.product h3,
 .index-specialist.product .master-tel {
-    color: #54a4ce;
+    color: #7ad1ff;
 }
 .ajax_form.specialist-form input[type="text"] {
     margin-bottom: 20px
@@ -777,10 +780,10 @@ ul.customBullet li a:hover {
     text-align: center
 }
 .content-button.orange {
-    background: #f3790e
+    background: #fba014
 }
 .content-button.orange:hover {
-    background: #fba014
+    background: #f3790e
 }
 #main {
     background: #f2f2f2;
@@ -1556,6 +1559,7 @@ a.no-link-decor {
         padding-top: 10px;
         border: 5px solid #438eb5;
         border-top: none;
+        border-radius: 10px;
         box-shadow: 0 0px 3px 3px rgba(0, 1, 1, .15);
     }
     .mobile-menu {
