@@ -676,18 +676,14 @@ h4 {
     text-align: center;
     font-size: 30px;
     line-height: 38px;
-    color: #f7942a;
+    color: #fff;
 }
 .index-specialist .master-tel {
 	padding-bottom: 15px;
-    color: #ffa325;
     font-weight: bold;
     text-decoration:underline;
 }
 .index-specialist .master-tel:hover {
-	padding-bottom: 15px;
-    color: #ffa325;
-    font-weight: bold;
     text-decoration:none;
 }
 .index-specialist form {
@@ -699,10 +695,6 @@ h4 {
     position: relative;
     box-shadow: 0 0 12px #777;
     z-index: 10;
-}
-.index-specialist.product h3,
-.index-specialist.product .master-tel {
-    color: #fff;
 }
 .ajax_form.specialist-form input[type="text"] {
     margin-bottom: 20px
