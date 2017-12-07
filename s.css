@@ -221,7 +221,7 @@ h4 {
 }
 #header .content-button.orange,
 #header .modal-request,
-#header .first-tel,
+#header .header-tel,
 #header .search {
     margin: 20px 0;
 }
@@ -229,7 +229,7 @@ h4 {
     position: relative;
     background-color: #f2f2f2;
 }
-.header-home .first-tel {
+.header-home .header-tel {
     margin-bottom: 20px;
 }
 #logo {
@@ -288,25 +288,27 @@ h4 {
     background: url(assets/templates/kombat/img/icons.png) no-repeat;
     background-position: -24px 0px;
 }
-.first-tel {
-    display: inline-block;
-    position: relative;
-    margin-left: 32px;
+.header-tel {
     font-weight: bold;
     color: #333;
-    text-align: right;
-    font-size: 24px;
-    line-height: 44px;
-    margin-bottom: 10px;
 }
-.first-tel:hover,
-.first-tel:focus {
+.header-tel:hover,
+.header-tel:focus {
     color: #333;
+}
+.first-tel, .second-tel {
+    display: inline-block;
+    width: 170px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    font-size: 20px;
+    line-height: 26px;
 }
 .first-tel::before {
     content: "";
     position: absolute;
-    left: -32px;
+    left: -30px;
     top: 10px;
     width: 24px;
     height: 24px;
@@ -347,8 +349,6 @@ h4 {
 .sticky-anchor {
     display: none
 }
-/* хлебные крошки */
-
 .breadcrumb {
     background: none;
     display: block;
@@ -392,8 +392,6 @@ h4 {
     text-shadow: 1px 1px #555;
     font-size: 28px
 }
-/* SUPER SALE */
-
 .super-sale {
     position: relative;
     box-shadow: 0 0 12px #777;
@@ -442,8 +440,6 @@ h4 {
     font-size: 24px;
     line-height: 28px
 }
-/* END SUPER SALE */
-
 .partner {
     background: #fff;
     color: #ff4d00;
@@ -1449,7 +1445,7 @@ a.no-link-decor {
 .ocarousel span {
     position: absolute;
     right: 0;
-    top: -70px;
+    top: -78px;
     width: 70px;
 }
 .ocarousel span a.prev,
@@ -1709,6 +1705,14 @@ a.no-link-decor {
         width: 98.9%;
         max-height: inherit
     }
+
+    .partner h3 {
+        text-align: left;
+        padding-left: 28px;
+}
+    .index-discription h2 {
+        margin-top: 0;
+}
 }
 @media screen and (max-width: 350px) {
     .my-gallery a {
@@ -1733,7 +1737,7 @@ a.no-link-decor {
 @media screen and (max-width: 1004px) {
     #header .content-button.orange,
     #header .modal-request,
-    #header .first-tel {
+    #header .header-tel {
         margin: 8px 0;
     }
     #header .search {
