@@ -573,6 +573,7 @@ h4 {
 }
 .sidebar-action p {
     display: block;
+    text-indent: 0;
 }
 .sidebar-action span {
     font-weight: bold;
@@ -678,7 +679,16 @@ h4 {
     color: #f7942a;
 }
 .index-specialist .master-tel {
-    color: #ffa325
+	padding-bottom: 15px;
+    color: #ffa325;
+    font-weight: bold;
+    text-decoration:underline;
+}
+.index-specialist .master-tel:hover {
+	padding-bottom: 15px;
+    color: #ffa325;
+    font-weight: bold;
+    text-decoration:none;
 }
 .index-specialist form {
     display: inline-block;
