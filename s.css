@@ -908,6 +908,7 @@ ul.customBullet li a:hover {
 .footer-final {
     align-items: center;
     padding: 5px 0;
+    padding-bottom: 15px;
     margin: 0;
     color: #fff;
     font-size: 12px;
