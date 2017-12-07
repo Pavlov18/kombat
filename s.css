@@ -692,7 +692,7 @@ h4 {
 }
 .index-specialist.product h3,
 .index-specialist.product .master-tel {
-    color: #7ad1ff;
+    color: #fff;
 }
 .ajax_form.specialist-form input[type="text"] {
     margin-bottom: 20px
@@ -794,8 +794,7 @@ ul.customBullet li a:hover {
     box-shadow: 0 0 12px #777;
     z-index: 10;
     background-color: #f3790e;
-    color: #ffffff;
-    font-style: italic;
+    color: #fff;
     font-size: 18px;
     text-align: center;
     line-height: 20px;
