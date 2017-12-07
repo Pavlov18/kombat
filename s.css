@@ -67,7 +67,6 @@ textarea {
 .under {
     text-decoration: underline
 }
-
 .vertical-align {
     display: flex;
     align-items: center;
@@ -90,7 +89,6 @@ textarea {
 .no-padding {
     padding: 0;
 }
-
 h1 {
     font-size: 26px;
     line-height: 28px
@@ -221,14 +219,12 @@ h4 {
     background-color: #fff;
     box-shadow: 0 10px 15px 0 rgba(0, 1, 1, .15);
 }
-
 #header .content-button.orange,
 #header .modal-request,
 #header .first-tel,
 #header .search {
-        margin: 20px 0;
-    }
-
+    margin: 20px 0;
+}
 #header {
     position: relative;
     background-color: #f2f2f2;
@@ -303,8 +299,10 @@ h4 {
     line-height: 44px;
     margin-bottom: 10px;
 }
-.first-tel:hover, .first-tel:focus {color:#333;}
-
+.first-tel:hover,
+.first-tel:focus {
+    color: #333;
+}
 .first-tel::before {
     content: "";
     position: absolute;
@@ -461,7 +459,6 @@ h4 {
     font-size: 30px;
     color: #2274a3;
 }
-
 #content .gallery-device {
     text-align: center;
     margin: 0;
@@ -481,9 +478,9 @@ h4 {
     text-align: left;
     margin-bottom: 20px;
 }
-
-#sidebar h3 {text-indent: 0}
-
+#sidebar h3 {
+    text-indent: 0
+}
 #sidebar a {
     text-decoration: none
 }
@@ -683,12 +680,12 @@ h4 {
     color: #fff;
 }
 .index-specialist .master-tel {
-	padding-bottom: 15px;
+    padding-bottom: 15px;
     font-weight: bold;
-    text-decoration:underline;
+    text-decoration: underline;
 }
 .index-specialist .master-tel:hover {
-    text-decoration:none;
+    text-decoration: none;
 }
 .index-specialist form {
     display: inline-block;
@@ -754,7 +751,7 @@ ul.customBullet li a:hover {
     text-decoration: none;
     color: #fff;
 }
-.content-button:focus{
+.content-button:focus {
     color: #fff;
     text-decoration: none;
 }
@@ -1125,7 +1122,6 @@ a.no-link-decor {
     font-weight: bold;
     text-align: left;
     text-shadow: none;
-
 }
 .menu ul li a:hover {
     background: #2274a3
@@ -1513,8 +1509,6 @@ a.no-link-decor {
 .ocarousel_indicators {
     width: 100%;
 }
-
-
 @media screen and (max-width: 320px) {} @media screen and (max-width: 1244px) {
     .menu li:first-child + li ul ul {
         top: 0
@@ -1611,7 +1605,7 @@ a.no-link-decor {
         font-size: 14px;
         color: #2274a3;
         -webkit-text-size-adjust: none;
-        text-shadow:none;
+        text-shadow: none;
         font-weight: bold;
     }
     .menu li:hover > ul {
@@ -1721,13 +1715,10 @@ a.no-link-decor {
         margin: 0 1px 1px 0
     }
 }
-
 @media screen and (max-width: 1200px) {
     .shell {
         width: 95%
     }
-
-
     #header .search {
         margin: 8px 0;
         margin-bottom: 28px;
@@ -1739,9 +1730,7 @@ a.no-link-decor {
         width: 290px;
     }
 }
-
 @media screen and (max-width: 1004px) {
-
     #header .content-button.orange,
     #header .modal-request,
     #header .first-tel {
@@ -1750,7 +1739,6 @@ a.no-link-decor {
     #header .search {
         margin-bottom: 10px;
     }
-
     .sidebar-widget {
         padding: 8% 7%;
         margin-bottom: 10px
