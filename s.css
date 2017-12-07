@@ -92,19 +92,19 @@ textarea {
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 26px;
     line-height: 28px
 }
 h2 {
-    font-size: 20px;
-    line-height: 24px
+    font-size: 24px;
+    line-height: 26px
 }
 h3 {
-    font-size: 18px;
-    line-height: 22px
+    font-size: 22px;
+    line-height: 24px
 }
 h4 {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 20px
 }
 .shell h1,
@@ -142,7 +142,8 @@ h4 {
     color: #2879a5;
     border-bottom: #ecebeb 1px solid;
     line-height: 30px;
-    text-align: center;
+    text-align: left;
+    text-indent: 20px;
     box-shadow: 0 1px 0 0 #fff, -2px 14px 12px -13px #b4b3b3
 }
 .entry p {
@@ -353,7 +354,7 @@ h4 {
 .breadcrumb {
     background: none;
     display: block;
-    width: 95%;
+    width: 96.5%;
     margin: 15px 0;
     margin-left: auto;
     margin-right: auto;
@@ -362,7 +363,7 @@ h4 {
     border-radius: 16px;
 }
 .breadcrumb a {
-    color: #f3790e;
+    color: #3688b4;
     text-decoration: underline;
 }
 .breadcrumb a:hover {
@@ -388,6 +389,9 @@ h4 {
     font-weight: normal;
     box-shadow: none;
     color: #fff;
+    text-align: center;
+    text-indent: 0;
+    text-shadow: 1px 1px #555;
     font-size: 28px
 }
 /* SUPER SALE */
@@ -395,7 +399,6 @@ h4 {
 .super-sale {
     position: relative;
     box-shadow: 0 0 12px #777;
-    z-index: 10;
     background: #416bfb;
     background: -moz-linear-gradient(90deg, #416bfb, #7391f9);
     background: -webkit-linear-gradient(90deg, #416bfb, #7391f9);
@@ -410,7 +413,7 @@ h4 {
     padding-bottom: 40px;
     text-align: center;
     font-size: 30px;
-    color: #ff4d00;
+    color: #f3790e;
 }
 .super-sale img {
     width: 172px;
@@ -458,9 +461,7 @@ h4 {
     font-size: 30px;
     color: #2274a3;
 }
-#content h2 {
-    text-align: left;
-}
+
 #content .gallery-device {
     text-align: center;
     margin: 0;
@@ -480,6 +481,9 @@ h4 {
     text-align: left;
     margin-bottom: 20px;
 }
+
+#sidebar h3 {text-indent: 0}
+
 #sidebar a {
     text-decoration: none
 }
@@ -566,7 +570,8 @@ h4 {
     text-align: center;
 }
 .sidebar-action h3 {
-    color: #c90000;
+    color: #fba014;
+    text-align: center;
 }
 .sidebar-action p {
     display: block;
@@ -638,11 +643,13 @@ h4 {
 }
 .index-specialist {
     position: relative;
+    z-index: 1;
     background: -moz-linear-gradient(90deg, #416bfb, #7391f9);
     background: -webkit-linear-gradient(90deg, #416bfb, #7391f9);
     background: -o-linear-gradient(90deg, #416bfb, #7391f9);
     background: -ms-linear-gradient(90deg, #416bfb, #7391f9);
     background: #135881 url(assets/templates/kombat/img/background2-blue.jpg) top repeat-x;
+    box-shadow: 0 0px 3px 3px rgba(0, 1, 1, .15);
     line-height: 0;
 }
 .index-specialist .girl-operator {
@@ -656,7 +663,7 @@ h4 {
     text-align: center;
     display: inline-block;
     margin: 20px 0;
-    text-shadow: 1px 1px 3px #222;
+    text-shadow: 1px 1px 1px #555;
 }
 .index-specialist span {
     display: block;
@@ -671,12 +678,17 @@ h4 {
 .index-specialist .master-tel {
     display: block;
     text-align: center;
-    font-size: 38px;
+    font-size: 30px;
     line-height: 38px;
-    color: #f7942a;
+    color: #fff;
 }
 .index-specialist .master-tel {
-    color: #ffa325
+	padding-bottom: 15px;
+    font-weight: bold;
+    text-decoration:underline;
+}
+.index-specialist .master-tel:hover {
+    text-decoration:none;
 }
 .index-specialist form {
     display: inline-block;
@@ -687,10 +699,6 @@ h4 {
     position: relative;
     box-shadow: 0 0 12px #777;
     z-index: 10;
-}
-.index-specialist.product h3,
-.index-specialist.product .master-tel {
-    color: #54a4ce;
 }
 .ajax_form.specialist-form input[type="text"] {
     margin-bottom: 20px
@@ -728,6 +736,7 @@ ul.customBullet li a:hover {
 .content-button,
 .ajax_form .button {
     display: inline-block;
+    text-shadow: 1px 1px #555;
     color: #fff;
     min-width: 154px;
     cursor: pointer;
@@ -744,6 +753,10 @@ ul.customBullet li a:hover {
     background: #105a82;
     text-decoration: none;
     color: #fff;
+}
+.content-button:focus{
+    color: #fff;
+    text-decoration: none;
 }
 .content-button:active {
     color: #999
@@ -778,10 +791,10 @@ ul.customBullet li a:hover {
     text-align: center
 }
 .content-button.orange {
-    background: #f3790e
+    background: #fba014
 }
 .content-button.orange:hover {
-    background: #fba014
+    background: #f3790e
 }
 #main {
     background: #f2f2f2;
@@ -792,12 +805,12 @@ ul.customBullet li a:hover {
     box-shadow: 0 0 12px #777;
     z-index: 10;
     background-color: #f3790e;
-    color: #ffffff;
-    font-style: italic;
+    color: #fff;
     font-size: 18px;
     text-align: center;
     line-height: 20px;
     padding: 20px 0;
+    text-shadow: #555 1px 1px;
 }
 #footer {
     position: relative;
@@ -897,6 +910,7 @@ ul.customBullet li a:hover {
 .footer-final {
     align-items: center;
     padding: 5px 0;
+    padding-bottom: 15px;
     margin: 0;
     color: #fff;
     font-size: 12px;
@@ -1056,6 +1070,7 @@ a.no-link-decor {
     display: block;
     text-decoration: none;
     color: #fff;
+    text-shadow: #555 1px 1px;
     padding: 12px 14px;
     text-align: center
 }
@@ -1108,7 +1123,9 @@ a.no-link-decor {
     font-weight: normal;
     color: #2274a3;
     font-weight: bold;
-    text-align: left
+    text-align: left;
+    text-shadow: none;
+
 }
 .menu ul li a:hover {
     background: #2274a3
@@ -1139,7 +1156,7 @@ a.no-link-decor {
 .menu ul li li a {
     color: #000;
     background: none;
-    line-height: 16px
+    line-height: 16px;
 }
 .mobile-menu {
     display: none;
@@ -1167,6 +1184,7 @@ a.no-link-decor {
     text-decoration: none;
     background: #ffbf47;
     color: #fff;
+    text-shadow: 1px 1px #555;
 }
 .mobile-menu:focus {
     color: #fff;
@@ -1557,6 +1575,7 @@ a.no-link-decor {
         padding-top: 10px;
         border: 5px solid #438eb5;
         border-top: none;
+        border-radius: 10px;
         box-shadow: 0 0px 3px 3px rgba(0, 1, 1, .15);
     }
     .mobile-menu {
@@ -1591,7 +1610,9 @@ a.no-link-decor {
     .menu li a {
         font-size: 14px;
         color: #2274a3;
-        -webkit-text-size-adjust: none
+        -webkit-text-size-adjust: none;
+        text-shadow:none;
+        font-weight: bold;
     }
     .menu li:hover > ul {
         display: none
@@ -1599,6 +1620,7 @@ a.no-link-decor {
     .menu li:hover a {
         background: #46a7da;
         color: #fff;
+        text-shadow: 1px 1px #555;
     }
     .menu li li:hover > a {
         color: #339900
