@@ -152,14 +152,6 @@ h4 {
     padding-bottom: 12px;
     text-indent: 20px
 }
-.entry a {
-    color: #2879a5;
-    text-decoration: underline
-}
-.entry a:hover {
-    color: #6195b2;
-    text-decoration: none
-}
 .entry ol {
     margin-top: 0;
     list-style-position: inside
@@ -656,9 +648,16 @@ h4 {
 .index-specialist .text {
     text-align: center;
     display: inline-block;
-    margin: 20px 0;
+    margin:0;
+    margin-top: 20px;
     text-shadow: 1px 1px 1px #555;
 }
+
+.vertival-bottom {
+    display: flex;
+    align-items: flex-end;
+}
+
 .index-specialist span {
     display: block;
     font-weight: bold;
@@ -684,25 +683,18 @@ h4 {
     text-decoration: none;
 }
 
-
-
 .index-specialist form {
     display: inline-block;
     margin-top: 20px;
+    text-align: left;
 }
-
-
 
 #feedback .control-group {
     margin-bottom: 20px;
+    width: 100%;
     display: inline-block;
     text-align: left;
-    width: 75%;
 }
-
-
-
-
 
 #feedback input[type="text"] {
     margin-bottom: 0
