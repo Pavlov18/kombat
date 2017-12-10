@@ -138,25 +138,63 @@
       </section>
       <section class="index-specialist">
          <div class="shell row">
-            <div class="col-sm-4 hidden-xs right-text">
+            <div class="col-sm-3 hidden-xs right-text">
                <div class="girl-operator"></div>
             </div>
-            <div class="col-sm-8 col-xs-12 center-text">
+            <div class="col-sm-9 col-xs-12 center-text">
                <div class="text">
                   <h3>Срочный вызов мастера</h3>
                   <span>Вы можете заказать выезд нашего специалиста по телефону:</span>
                   <a href="tel:+7-3412-930-191" class="master-tel">+7-912-877-19-12</a>
                   <span>или отправить запрос:</span>
-                  <form class="ajax_form specialist-form" method="post">
-                     <input type="hidden" name="title" value="Главная">
-                     <input type="hidden" name="link" value="[[*uri]]">
-                     <input type="text" placeholder="Как вас зовут?" value="" name="specialist-form-name" id="specialist-form-name" class="input_text form-control">
-                     <span class="error_name"></span>
-                     <input type="text" placeholder="Введите номер телефона *" value="" name="specialist-form" id="specialist-form-tel" class="phone-zv form-control">
-                     <input type="text" name="workemail" value="" class="field">
-                     <input class="content-button orange" type="submit" value="Вызов мастера">  
-                     <input type="hidden" name="af_action" value="1594c06f959ae6ab33341e3e7c24aae6">
-                  </form>
+<form action="" method="post" id="feedback" class="ajax_form specialist-form">
+  <input type="hidden" name="title" value="Главная">
+
+  <div class="control-group row">
+    <label class="col-md-2 control-label" for="af_name">Имя</label>
+    <div class="col-md-10 controls">
+      <div class="row">
+         <input type="text" id="af_name" name="name" value="" placeholder="" class="error col-md-7 col-xs-12">
+         <span class="error_name error col-md-5 col-xs-12"> <span class="error">Это поле должно быть не меньше 2 символов.</span></span>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="control-group row">
+    <label class="control-label col-md-2" for="af_telephone">Телефон</label>
+    <div class="controls col-md-10">
+      <div class="row">
+         <input type="text" id="af_telephone" name="telephone" value="" placeholder="" class="error col-md-7 col-xs-12">
+         <span class="error_telephone error col-md-5 col-xs-12"> <span class="error">Это поле должно быть не меньше 6 символов.</span></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="control-group row">
+
+  <div class="col-lg-7 col-md-12 col-xs-12 text-center">
+    <div class="g-recaptcha" data-sitekey="6Lc4XDwUAAAAAD4f83vCI-0MWel-UzGIrtF7f6W3"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?k=6Lc4XDwUAAAAAD4f83vCI-0MWel-UzGIrtF7f6W3&amp;co=aHR0cDovL2JldGEud2VibGl0ZS5ydTo4MA..&amp;hl=ru&amp;v=r20171206132803&amp;size=normal&amp;cb=hkycwa4enb4j" width="304" height="78" role="presentation" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response error" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea></div></div>
+
+    <script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/api2/r20171206132803/recaptcha__ru.js"></script><script type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=ru"></script>
+        </div>
+        <div class="col-lg-5 col-md-12 col-xs-12 text-center">
+            <span class="error_g-recaptcha-response error"> <span class="error">Это поле обязательно для заполнения.</span></span>
+         </div>
+
+  </div>
+ 
+  <div class="control-group row">
+    <div class="controls col-md-12 center-text">
+      <button type="reset" class="btn btn-default">Очистить</button>
+      <button type="submit" class="btn btn-primary">Отправить</button>
+    </div>
+  </div>
+  
+  
+  
+
+   <input type="hidden" name="af_action" value="8f8a42d568e0d67fdf70b0d0b7b97d5d">
+<input type="hidden"><input type="hidden"></form>
                </div>
             </div>
          </div>

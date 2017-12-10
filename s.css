@@ -89,6 +89,9 @@ textarea {
 .no-padding {
     padding: 0;
 }
+.ho-margin {
+    margin: 0;
+}
 h1 {
     font-size: 26px;
     line-height: 28px
@@ -420,7 +423,6 @@ h4 {
     margin: 0;
 }
 .sale-icon {
-    background: url(../assets/templates/kombat/img/super-sale.png) no-repeat center left;
     color: #f47d12;
     padding: 5px 10px 3px 10px;
     text-transform: uppercase;
@@ -652,7 +654,6 @@ h4 {
     background: url(assets/templates/kombat/img/product/girl-operator.png) bottom no-repeat;
 }
 .index-specialist .text {
-    max-width: 608px;
     text-align: center;
     display: inline-block;
     margin: 20px 0;
@@ -660,7 +661,6 @@ h4 {
 }
 .index-specialist span {
     display: block;
-    margin-bottom: 20px;
     font-weight: bold;
     font-size: 22px;
     line-height: 24px;
@@ -683,10 +683,53 @@ h4 {
 .index-specialist .master-tel:hover {
     text-decoration: none;
 }
+
+
+
 .index-specialist form {
     display: inline-block;
-    max-width: 408px;
+    margin-top: 20px;
 }
+
+
+
+#feedback .control-group {
+    margin-bottom: 20px;
+    display: inline-block;
+    text-align: left;
+    width: 75%;
+}
+
+
+
+
+
+#feedback input[type="text"] {
+    margin-bottom: 0
+}
+
+#feedback .control-label {
+    display: inline-block;
+    text-align: left;
+    line-height: 28px;
+}
+
+#feedback .error {
+    color:#f54646;
+    line-height: 14px;
+    font-size: 14px;
+    text-align: left;
+}
+
+#feedback .error_g-recaptcha-response {
+    line-height: 38px;
+    display: inline-block;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#feedback .g-recaptcha {display: inline-block;}
+
 .index-specialist.product {
     background: #ffae2e url(assets/templates/kombat/img/background2.jpg) top repeat;
     position: relative;
